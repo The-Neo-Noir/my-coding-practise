@@ -1,5 +1,9 @@
 # my-coding-practise
 
+## Arrays
+1. https://www.geeksforgeeks.org/program-for-k-most-recently-used-mru-apps/
+
+
 ## STACKS
 1. Implement a stack , push,pop,peek,size and empty methods, using Array of integers
 2. Implement the same using generics
@@ -20,6 +24,16 @@
 18. Reverse a stack using recursion
 19. Delete middle element of a stack
 20. Sort a stack using a temporary stack
+21. Arithmetic Expression Evalution
+22. Implement stack using a singly linked list
 
 ## QUEUES
+
+## Linked List
+
+## Strings
+
+## Hashing
+
+
 
