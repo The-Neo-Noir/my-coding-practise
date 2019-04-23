@@ -3,8 +3,9 @@
 ## Arrays
 1. https://www.geeksforgeeks.org/program-for-k-most-recently-used-mru-apps/
 2. Segregate 0s and 1s in an array: https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
-3.Remove duplicates from unsorted array : https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array/
-4.
+3. Remove duplicates from unsorted array : https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array/
+4. Check whether an Array is Subarray of another Array: https://www.geeksforgeeks.org/check-whether-an-array-is-subarray-of-another-array/
+
 
 
 
