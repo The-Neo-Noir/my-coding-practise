@@ -33,6 +33,7 @@
 22. Implement stack using a singly linked list
 23. Find maximum depth of nested parenthesis in a string
 24. Check for balanced parenthesis without using stack
+25. Find maximum in a stack in O(1) time and O(1) extra space
 
 ## QUEUES
 
