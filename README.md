@@ -31,6 +31,7 @@
 20. Sort a stack using a temporary stack
 21. Arithmetic Expression Evalution
 22. Implement stack using a singly linked list
+23. Find maximum depth of nested parenthesis in a string
 
 ## QUEUES
 
