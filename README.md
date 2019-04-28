@@ -5,6 +5,12 @@
 2. Segregate 0s and 1s in an array: https://www.geeksforgeeks.org/segregate-0s-and-1s-in-an-array-by-traversing-array-once/
 3. Remove duplicates from unsorted array : https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array/
 4. Check whether an Array is Subarray of another Array: https://www.geeksforgeeks.org/check-whether-an-array-is-subarray-of-another-array/
+5. Find missing number. https://www.geeksforgeeks.org/find-the-missing-number/
+6. Floor and Ceiling in a sorted array. https://www.geeksforgeeks.org/ceiling-in-a-sorted-array/
+7. Count number of occurrences (or frequency) in a sorted array: https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/
+8. Find a pair with the given difference : https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
+9. Number of elements that can be seen from right side : https://www.geeksforgeeks.org/number-of-elements-that-can-be-seen-from-right-side/
+
 
 
 
