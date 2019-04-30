@@ -46,6 +46,12 @@
 ## Linked List
 
 ## Strings
+1. Trim a string
+2. Find first non-repeatable character in a string.
+3. Reverse a string of word
+4. Find substring.
+
+
 
 ## Hashing
 
