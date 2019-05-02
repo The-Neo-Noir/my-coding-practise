@@ -1,3 +1,5 @@
+package com.aneonoir.dsalgo.practise.array;
+
 /**
  *
  * source: https://www.geeksforgeeks.org/smallest-pair-sum-in-an-array/

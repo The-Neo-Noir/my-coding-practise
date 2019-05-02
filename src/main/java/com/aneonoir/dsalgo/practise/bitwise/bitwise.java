@@ -1,4 +1,4 @@
-package com.aneonoir.sdalgo;
+package com.aneonoir.dsalgo.practise.bitwise;
 
 import org.junit.Test;
 

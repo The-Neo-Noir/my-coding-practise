@@ -1,4 +1,4 @@
-package com.aneonoir.dsalgo.linkedlist;
+package com.aneonoir.dsalgo.practise.linkedlist;
 
 import org.junit.Test;
 

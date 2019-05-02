@@ -1,3 +1,5 @@
+package com.aneonoir.dsalgo.practise.array;
+
 /**
  *
  * Source Link: https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
