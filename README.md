@@ -46,6 +46,9 @@
 ## QUEUES
 
 ## Linked List
+1. Finding middle element in a linked list. https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1
+2. Count the number of elements in a single linked list. Try both recursive and iterative.
+3. 
 
 ## Strings
 1. Trim a string
