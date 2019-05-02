@@ -5,7 +5,8 @@ import java.util.Arrays;
  *
  * or an array
  */
-
+/**
+ * Tags: array,permutation,bitwise
 
 /**
  * Where I strugged?
