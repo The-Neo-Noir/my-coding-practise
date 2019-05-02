@@ -58,13 +58,15 @@
 ## Hashing
 
 ## Bitwise
-1.Turn off the rightmost set bit https://www.geeksforgeeks.org/turn-off-the-rightmost-set-bit/
+1. Turn off the rightmost set bit https://www.geeksforgeeks.org/turn-off-the-rightmost-set-bit/
 2. Count set bits in an integer https://www.geeksforgeeks.org/count-set-bits-in-an-integer/
 3. Binary representation of a given number 
 4. Subtract two numbers without using arithmetic operators https://www.geeksforgeeks.org/subtract-two-numbers-without-using-arithmetic-operators/
 5. https://www.geeksforgeeks.org/set-all-even-bits-of-a-number/
 6. https://www.geeksforgeeks.org/write-an-efficient-method-to-check-if-a-number-is-multiple-of-3/
 7. https://www.geeksforgeeks.org/write-an-efficient-method-to-check-if-a-number-is-multiple-of-3/
+9. Check if all bits of a number are set. https://www.geeksforgeeks.org/check-bits-number-set/
+
 
 
 
