@@ -10,6 +10,7 @@
 7. Count number of occurrences (or frequency) in a sorted array: https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/
 8. Find a pair with the given difference : https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/
 9. Number of elements that can be seen from right side : https://www.geeksforgeeks.org/number-of-elements-that-can-be-seen-from-right-side/
+10.Generate all possible permutation of letters a given string.
 
 
 
