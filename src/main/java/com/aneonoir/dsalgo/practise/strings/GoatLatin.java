@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  * struggle: how I wanted to deal with the spaces in between the words, I started with spliting the setence
  *  by \\s+ and then finding the words , but then I had to deal with the spaces , which I struggelded
  *
- *   Task: TODO: Can you do it without splitting the word
+ *   Task: TODO: Can you do it without sp         v v v vvvbgh v          bvb litting the word
  */
 public class GoatLatin {
 
