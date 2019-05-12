@@ -1,5 +1,7 @@
 package com.aneonoir.dsalgo.practise.stack;
 
+import org.junit.Test;
+
 import java.util.Stack;
 
 import static org.junit.Assert.assertEquals;
@@ -8,7 +10,9 @@ import static org.junit.Assert.assertEquals;
  * Link : Coding interview questions; page 244, Problem 11
  * <p>
  * Solution:
- * approach1: Brute force with extra space
+ * approach1:
+ * 1. Brute force with extra space
+ * 2. With recursion , recursion one don't use extra space. TODO
  */
 public class ReverseElements {
 
@@ -20,14 +24,41 @@ public class ReverseElements {
         integers.push(6);
 
 
-        Stack<Integer> stack = solutionUsingExtraStack(integers);
+        //Stack<Integer> stack = solutionUsingExtraStack(integers);
+        solutionInRecursion(integers);
+
+        // assertEquals(Integer.valueOf(4), stack.peek());
+        //assertEquals(Integer.valueOf(4), stack.pop());
+        // assertEquals(Integer.valueOf(5), stack.pop());
+        // assertEquals(Integer.valueOf(6), stack.pop());
+
+
+    }
+
+    @Test
+    public void testResursion() {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(4);
+        stack.push(5);
+        stack.push(6);
+        solutionInRecursion(stack);
 
         assertEquals(Integer.valueOf(4), stack.peek());
         assertEquals(Integer.valueOf(4), stack.pop());
         assertEquals(Integer.valueOf(5), stack.pop());
         assertEquals(Integer.valueOf(6), stack.pop());
 
+    }
 
+    private static void solutionInRecursion(Stack<Integer> integers) {
+
+        if (!integers.empty()) {
+            Integer pop = integers.pop();
+            solutionInRecursion(integers);
+            integers.push(pop);
+        }else{
+
+        }
     }
 
     private static Stack<Integer> solutionUsingExtraStack(Stack<Integer> integers) {
