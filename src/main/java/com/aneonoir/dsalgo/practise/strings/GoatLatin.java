@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * link: leetcode
+ * link: https://leetcode.com/problems/goat-latin/
  *
  * struggle: how I wanted to deal with the spaces in between the words, I started with spliting the setence
  *  by \\s+ and then finding the words , but then I had to deal with the spaces , which I struggelded
@@ -55,6 +55,11 @@ public class GoatLatin {
 
         assertEquals("Applemaa inegarVmaaa  ", sb);
 
+         inputSetence ="RFd FvQoab d";
+        String sb2 = buildGoatLanguage(inputSetence);
+
+        assertEquals("FdRmaa vQoabFmaaa dmaaaa", sb2);
+
     }
 
 
@@ -70,7 +75,7 @@ public class GoatLatin {
                         .append(s);
             } else {
                 String s = captureSpaces(inputSetence, words[i]);
-                sb.append(new StringBuffer(manipulateConsonants(words[i])))
+                   sb.append(new StringBuffer(manipulateConsonants(words[i])))
                   .append(buildMa(i + 1))
                   .append(s);
 
@@ -100,6 +105,10 @@ public class GoatLatin {
         assertEquals(" ", captureSpaces(input4, "apple"));
         assertEquals("", captureSpaces(input4, "cider"));
 
+        String input5="RFd FvQoab d";
+
+
+        assertEquals("", captureSpaces(input4, "d"));
 
 
 
