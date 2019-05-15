@@ -1,7 +1,7 @@
 package com.aneonoir.dsalgo.practise.array;
 /**
  * https://app.codesignal.com/arcade/intro/level-5/EEJxjQ7oo7C5wAGjE
-* TODO: can you do it in functional style ?
+* TODO: can you do it in functional style ? Using
  */
 public class FindMaxAdjucentDifference {
 
