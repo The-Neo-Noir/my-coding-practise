@@ -3,6 +3,7 @@ package com.aneonoir.dsalgo.practise.array;
 /**
  * link: https://app.codesignal.com/challenge/vq3ZbmsHRdjzv2WKQ
  *
+ * tags: array,matrix
  */
 public class ExtractMatrixColumb {
 
