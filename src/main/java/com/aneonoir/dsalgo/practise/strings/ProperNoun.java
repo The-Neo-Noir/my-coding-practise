@@ -4,6 +4,7 @@ import org.junit.Test;
 
 /**
  * link: https://app.codesignal.com/arcade/code-arcade/book-market/2nSEQ8CGoddTJtnbo
+ * struggle: a little bit converting asci to char
  *
  *
  */
@@ -15,24 +16,26 @@ public class ProperNoun {
         System.out.println(paris);
 
     }
-    public String properNounCorrection(String noun) {
+
+    String properNounCorrection(String noun) {
         StringBuffer sb = new StringBuffer();
-        for(int i=0;i<noun.length();i++){
-            if(i==0){
-                if(!(noun.charAt(i) >=65 || noun.charAt(i)<=90)){ //if small
-                    sb.append(""+(char)(noun.charAt(i)-32));
-                }else{
+        for (int i = 0; i < noun.length(); i++) {
+            if (i == 0) {
+                if (!(noun.charAt(i) + "").matches("[A-Z]")) {
+                    sb.append("" + (char) (noun.charAt(i) - 32));
+                } else {
                     sb.append(noun.charAt(i));
                 }
-            }else{
-                if((noun.charAt(i) >=65 || noun.charAt(i)<=90)){ //if capital
-                    sb.append("");
-                }else{
+            } else {
+                if ((noun.charAt(i) + "").matches("[A-Z]")) { //if capital
+                    sb.append("" + (char) (noun.charAt(i) + 32));
+                } else {
                     sb.append(noun.charAt(i));
                 }
             }
         }
         return sb.toString();
     }
+
 
 }
