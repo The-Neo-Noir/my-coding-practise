@@ -16,6 +16,8 @@ public class StringDecoration {
     public static void main(String[] args) {
         System.out.println(addBorder(new String[]{"23", "23"}));
 
+        System.out.println((int)(Math.log10(8) / Math.log10(2)));
+
     }
 
        static String[] addBorder(String[] picture) {

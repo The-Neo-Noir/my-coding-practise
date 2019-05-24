@@ -1,0 +1,8 @@
+Don't use == to float or double number to compare
+Use Float.compare or Double.compare
+
+String substring ( not subString() ) first index is inclusive , but last index is exclusive
+
+StringBuffer.equals(String) will not lead to true , even if they are true
+
+(Math.log10(8) / Math.log10(2)); will give you 3
