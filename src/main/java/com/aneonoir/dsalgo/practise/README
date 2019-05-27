@@ -15,3 +15,5 @@ SET INTERFACE:
 
 Map:
      public Collection<V> values(): returns only values in the map
+
+You can use        Character.isUpperCase() or Character.isLowerCase()

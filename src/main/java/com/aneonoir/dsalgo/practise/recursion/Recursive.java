@@ -1,4 +1,4 @@
-package com.aneonoir.dsalgo.practise;
+package com.aneonoir.dsalgo.practise.recursion;
 
 public class Recursive {
 
