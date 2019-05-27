@@ -1,7 +1,9 @@
 package com.aneonoir.dsalgo.practise.hash;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  *
@@ -11,7 +13,7 @@ import java.util.Map;
  */
 public class FileNaming {
     String[] fileNaming(String[] names) {
-
+        Set<String> sd = new HashSet<>();
         Map<String,Integer> hash=new HashMap<>();
         String result[]= new String[names.length];
         for(int i=0;i<names.length;i++){

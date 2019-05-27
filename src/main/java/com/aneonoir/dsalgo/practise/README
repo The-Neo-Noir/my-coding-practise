@@ -6,3 +6,12 @@ String substring ( not subString() ) first index is inclusive , but last index i
 StringBuffer.equals(String) will not lead to true , even if they are true
 
 (Math.log10(8) / Math.log10(2)); will give you 3
+
+perfect square has odd factors
+
+
+SET INTERFACE:
+    contains(char+"")
+
+Map:
+     public Collection<V> values(): returns only values in the map
