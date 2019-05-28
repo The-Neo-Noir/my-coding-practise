@@ -17,3 +17,13 @@ Map:
      public Collection<V> values(): returns only values in the map
 
 You can use        Character.isUpperCase() or Character.isLowerCase()
+
+
+asci code : a-97
+            z-122
+
+array: find all the rows , columns and diagonals of a given square matrix
+    diagonal1: when i==j
+    diagonal2: when i+j=array.length;
+    rows= a[i][j]
+    columns a[j][i];
