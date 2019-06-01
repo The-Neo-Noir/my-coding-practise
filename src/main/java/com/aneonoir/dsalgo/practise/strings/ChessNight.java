@@ -12,6 +12,7 @@ public class ChessNight {
     @Test
     public void test() {
         int a1 = chessKnight("c2");
+
     }
     int chessKnight(String cell) {
             String asd[]= new String[8];
