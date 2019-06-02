@@ -29,3 +29,6 @@ array: find all the rows , columns and diagonals of a given square matrix
     columns a[j][i];
 
 assertArrayEquals is used for equality check of arrays,.
+
+array.legth ; will give you the rows it has
+array[0].length; will give you the column it has
