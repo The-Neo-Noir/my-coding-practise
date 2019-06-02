@@ -27,3 +27,5 @@ array: find all the rows , columns and diagonals of a given square matrix
     diagonal2: when i+j=array.length;
     rows= a[i][j]
     columns a[j][i];
+
+assertArrayEquals is used for equality check of arrays,.
