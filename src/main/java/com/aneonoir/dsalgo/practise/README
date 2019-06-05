@@ -32,3 +32,6 @@ assertArrayEquals is used for equality check of arrays,.
 
 array.legth ; will give you the rows it has
 array[0].length; will give you the column it has
+
+
+Explore whatis merge in hashmap
