@@ -16,14 +16,13 @@ public class PlusOne {
     }
 
     private int[] converNumberToIntArray(int number) {
-        123;
-        124;
+
 
         while (number > 0) {
-            number % 10;
+            // number % 10;
         }
 
-
+        return null;
     }
 
     private int convertToIntegerAndPlusOne(int[] digits) {
