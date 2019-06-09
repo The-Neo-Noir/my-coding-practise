@@ -1,5 +1,10 @@
+package com.aneonoir.dsalgo.practise.array;
+
 import java.util.Scanner;
 
+/**
+ * link: https://www.hackerrank.com/challenges/arrays-ds/problem
+ */
 public class ArraysDS {
 
     public static void main(String[] args) {

@@ -1,6 +1,11 @@
+package com.aneonoir.dsalgo.practise.array;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * link: https://www.hackerrank.com/challenges/2d-array/problem
+ */
 public class TwoDArrayDS {
 
 
