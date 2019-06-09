@@ -5,7 +5,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
+ * link: codeforces
  *
+ * approach: this is done using o(n) solution, quite bruteforce
+ *
+ * can you solve it in O(1)
  */
 public class MaxDivisor {
 
