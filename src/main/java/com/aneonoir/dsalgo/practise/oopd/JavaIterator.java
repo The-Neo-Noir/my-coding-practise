@@ -1,8 +1,10 @@
+package com.aneonoir.dsalgo.practise.oopd;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class Main {
+public class JavaIterator {
 
     static Iterator func(ArrayList mylist) {
         Iterator it = mylist.iterator();

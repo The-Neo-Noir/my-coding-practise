@@ -1,7 +1,9 @@
+package com.aneonoir.dsalgo.practise.array;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution {
+public class JavaTwoDArray {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -16,82 +18,83 @@ public class Solution {
         System.out.println(driver.getWinner());
 
     }
-}
 
-class HourGlass {
-    private int[][] internalStructure;
+    static class HourGlassDriver {
+        private com.aneonoir.dsalgo.practise.array.HourGlass[] hourGlasses = new com.aneonoir.dsalgo.practise.array.HourGlass[16];
+        private int[][] sourceMatrix = new int[6][6];
+        private int currentGlassCount = 0;
 
-    private int hourGlassFigureSum;
-
-    public HourGlass(int[][] arr) {
-
-        this.internalStructure = arr;
-        hourGlassSum();
-    }
-
-    public int getHourGlassFigureSum() {
-        return hourGlassFigureSum;
-    }
-
-    private void hourGlassSum() {
-        hourGlassFigureSum = rowSums(internalStructure[0]) + internalStructure[1][1] + rowSums(internalStructure[2]);
-    }
-
-    private int rowSums(int row[]) {
-        int sum = 0;
-        for (int count = 0; count < row.length; count++) {
-            sum += row[count];
+        public HourGlassDriver(int[][] data) {
+            this.sourceMatrix = data;
         }
-        return sum;
-    }
 
-    @Override
-    public boolean equals(Object obj) {
-        return Arrays.deepEquals(this.internalStructure, ((HourGlass) obj).internalStructure);
-    }
+        private com.aneonoir.dsalgo.practise.array.HourGlass createHourGlass(int sourceX, int row) {
+            int[][] hourGlassStructure = new int[3][3];
+            hourGlassStructure[0] = Arrays.copyOfRange(sourceMatrix[row], sourceX, sourceX + 3);
+            hourGlassStructure[1] = Arrays.copyOfRange(sourceMatrix[row + 1], sourceX, sourceX + 3);
+            hourGlassStructure[2] = Arrays.copyOfRange(sourceMatrix[row + 2], sourceX, sourceX + 3);
+            return hourGlasses[currentGlassCount] = new com.aneonoir.dsalgo.practise.array.HourGlass(hourGlassStructure);
+        }
 
-}
-
-class HourGlassDriver {
-    private HourGlass[] hourGlasses = new HourGlass[16];
-    private int[][] sourceMatrix = new int[6][6];
-    private int currentGlassCount = 0;
-
-    public HourGlassDriver(int[][] data) {
-        this.sourceMatrix = data;
-    }
-
-    private HourGlass createHourGlass(int sourceX, int row) {
-        int[][] hourGlassStructure = new int[3][3];
-        hourGlassStructure[0] = Arrays.copyOfRange(sourceMatrix[row], sourceX, sourceX + 3);
-        hourGlassStructure[1] = Arrays.copyOfRange(sourceMatrix[row + 1], sourceX, sourceX + 3);
-        hourGlassStructure[2] = Arrays.copyOfRange(sourceMatrix[row + 2], sourceX, sourceX + 3);
-        return hourGlasses[currentGlassCount] = new HourGlass(hourGlassStructure);
-    }
-
-    public void parseAndBuild() {
-        int hourGlassCount = 0;
-        for (int col = 0; col < 4; col++) {
-            for (int row = 0; row < 4; row++) {
-                createHourGlass(col, row);
-                currentGlassCount++;
+        public void parseAndBuild() {
+            int hourGlassCount = 0;
+            for (int col = 0; col < 4; col++) {
+                for (int row = 0; row < 4; row++) {
+                    createHourGlass(col, row);
+                    currentGlassCount++;
+                }
             }
         }
-    }
 
-    public HourGlass[] getHourGlasses() {
-        return hourGlasses;
-    }
-
-
-    public int getWinner() {
-        int winner = hourGlasses[0].getHourGlassFigureSum();
-        for (int counter = 1; counter < 16; counter++) {
-            if (winner < hourGlasses[counter].getHourGlassFigureSum()) {
-                winner = hourGlasses[counter].getHourGlassFigureSum();
-            }
+        public com.aneonoir.dsalgo.practise.array.HourGlass[] getHourGlasses() {
+            return hourGlasses;
         }
-        return winner;
+
+
+        public int getWinner() {
+            int winner = hourGlasses[0].getHourGlassFigureSum();
+            for (int counter = 1; counter < 16; counter++) {
+                if (winner < hourGlasses[counter].getHourGlassFigureSum()) {
+                    winner = hourGlasses[counter].getHourGlassFigureSum();
+                }
+            }
+            return winner;
+        }
+    }
+
+    class HourGlass {
+        int[][] internalStructure;
+
+        private int hourGlassFigureSum;
+
+        public HourGlass(int[][] arr) {
+
+            this.internalStructure = arr;
+            hourGlassSum();
+        }
+
+        public int getHourGlassFigureSum() {
+            return hourGlassFigureSum;
+        }
+
+        private void hourGlassSum() {
+            hourGlassFigureSum = rowSums(internalStructure[0]) + internalStructure[1][1] + rowSums(internalStructure[2]);
+        }
+
+        private int rowSums(int row[]) {
+            int sum = 0;
+            for (int count = 0; count < row.length; count++) {
+                sum += row[count];
+            }
+            return sum;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            return Arrays.deepEquals(this.internalStructure, ((com.aneonoir.dsalgo.practise.array.HourGlass) obj).internalStructure);
+        }
+
     }
 }
+
 

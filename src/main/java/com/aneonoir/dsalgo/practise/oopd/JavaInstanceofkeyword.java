@@ -1,3 +1,5 @@
+package com.aneonoir.dsalgo.practise.oopd;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -12,7 +14,7 @@ class Hacker {
 }
 
 
-public class InstanceOFTutorial {
+public class JavaInstanceofkeyword {
 
     static String count(ArrayList mylist) {
         int a = 0, b = 0, c = 0;

@@ -1,3 +1,5 @@
+package com.aneonoir.dsalgo.practise.sorting;
+
 import java.util.*;
 
 class Student {
@@ -50,7 +52,7 @@ class StudentComparator implements Comparator<Student> {
 }
 
 //Complete the code
-public class Solution {
+public class JavaSort {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int testCases = Integer.parseInt(in.nextLine());

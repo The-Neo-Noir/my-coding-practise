@@ -1,3 +1,4 @@
+/*
 public static boolean flag;
 public static int area=0;
 public static int H;
@@ -15,3 +16,5 @@ static{
         flag=true;
         }
         }
+*/
+/**/

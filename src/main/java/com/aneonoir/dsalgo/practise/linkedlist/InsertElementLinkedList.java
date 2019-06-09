@@ -6,7 +6,8 @@
      int data;
      Node next;
   }
-*/
+*//*
+
 
 
 Node Insert(Node head,int data){
@@ -18,7 +19,9 @@ Node Insert(Node head,int data){
         Node tempNode=head;
         while(tempNode!=null){
         if(tempNode.next==null){
-        Node newNode=new Node();
+        Node newNode=new Node()*/
+/**//*
+;
         newNode.data=data;
         newNode.next=null;
         tempNode.next=newNode;
@@ -31,3 +34,4 @@ Node Insert(Node head,int data){
         return head;
 
         }
+*/

@@ -1,3 +1,5 @@
+package com.aneonoir.dsalgo.practise.queue;
+
 import java.util.*;
 
 class Priorities {

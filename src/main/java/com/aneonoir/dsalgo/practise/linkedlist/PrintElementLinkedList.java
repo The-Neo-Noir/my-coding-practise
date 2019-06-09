@@ -6,7 +6,8 @@
      int data;
      Node next;
   }
-*/
+*//*
+
 
 // This is a "method-only" submission. 
 // You only need to complete this method. 
@@ -19,3 +20,4 @@ void Print(Node head){
         }
 
         }
+*/

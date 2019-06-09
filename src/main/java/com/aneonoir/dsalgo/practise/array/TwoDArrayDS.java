@@ -25,7 +25,7 @@ public class TwoDArrayDS {
 }
 
 class HourGlass {
-    private int[][] internalStructure;
+    public int[][] internalStructure;
 
     private int hourGlassFigureSum;
 

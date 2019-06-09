@@ -1,3 +1,4 @@
+/*
 class Arithmetic {
 8
 
@@ -15,3 +16,4 @@ class Adder extends Arithmetic {
 
         14
 }
+*/

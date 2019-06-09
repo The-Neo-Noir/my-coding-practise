@@ -1,3 +1,4 @@
+/*
 Fork into a snippetOpen in editor
 
         10
@@ -12,3 +13,4 @@ Fork into a snippetOpen in editor
         a[i]=val;
         15
         }
+*/
