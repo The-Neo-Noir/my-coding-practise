@@ -15,20 +15,20 @@ public class MinimalNumberOfCoins {
     }
 
 
-   String  createDecoration(String character,int count){
-        String [] sd= new String[count];
-        Arrays.fill(sd,character);
+    String createDecoration(String character, int count) {
+        String[] sd = new String[count];
+        Arrays.fill(sd, character);
         return Arrays.toString(sd);
     }
 
     int minimalNumberOfCoins(int[] coins, int price) {
-        int count=0;
-        for(int i=coins.length-1;i>=0;i--){
-            if(price==0){
+        int count = 0;
+        for (int i = coins.length - 1; i >= 0; i--) {
+            if (price == 0) {
                 return count;
-            }else{
-                count+=(price/coins[i]);
-                price=price-((price/coins[i])*coins[i]);
+            } else {
+                count += (price / coins[i]);
+                price = price - ((price / coins[i]) * coins[i]);
             }
         }
         return count;

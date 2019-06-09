@@ -12,9 +12,9 @@ import static org.junit.Assert.assertEquals;
  * approach: Method 1
  * 1. find the size of the nodes
  * 2. Iterate till you match the item by diving the
- *  Method 2:
- *  Traverse linked list using two pointers. Move one pointer by one and other pointer by two.
- *  When the fast pointer reaches end slow pointer will reach middle of the linked list.
+ * Method 2:
+ * Traverse linked list using two pointers. Move one pointer by one and other pointer by two.
+ * When the fast pointer reaches end slow pointer will reach middle of the linked list.
  *
  * <p>
  * struggle:
@@ -55,6 +55,7 @@ public class FindMiddleElementInAList {
             return calculateSize(node.getNextNode(), count + 1);
         }
     }
+
     @Test
     public void evenNumberedLinkedList() {
         Node node = new Node(0);

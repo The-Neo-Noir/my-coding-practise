@@ -1,18 +1,16 @@
 package com.aneonoir.dsalgo.practise.linkedlist;
 
 /**
- *
- *tags: recursion,singlelist,
- *
+ * tags: recursion,singlelist,
+ * <p>
  * approach, a recursive method call with a base condition as next==null. a counter counts the level of
  * the recursion and returns the count.
- *
- *
+ * <p>
+ * <p>
  * TODO:
  * 1 . Can you draw how the recursion worked in a stack
  * 2. What if the head node is null
  * 3.
- *
  */
 public class FindElementSizeInAList {
 
@@ -35,19 +33,20 @@ public class FindElementSizeInAList {
         System.out.println(i1);
 
     }
-//struggle:
+
+    //struggle:
     private static int calculateSize(Node node, int count) {
         if (node.getNextNode() == null) {
             return count;
         } else {
-           return calculateSize(node.getNextNode(), count + 1);
+            return calculateSize(node.getNextNode(), count + 1);
         }
     }
 
-    public static int calculateSizeNonRecursive(Node node){
-        int count=1;
-        while(node.getNextNode()!=null){
-            node=node.getNextNode();
+    public static int calculateSizeNonRecursive(Node node) {
+        int count = 1;
+        while (node.getNextNode() != null) {
+            node = node.getNextNode();
             count++;
         }
         return count;

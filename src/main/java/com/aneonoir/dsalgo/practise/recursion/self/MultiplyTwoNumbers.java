@@ -2,14 +2,12 @@ package com.aneonoir.dsalgo.practise.recursion.self;
 
 import org.junit.Test;
 
-import static com.sun.javafx.fxml.expression.Expression.multiply;
 import static org.junit.Assert.assertEquals;
 
 /**
  * Here don't use any multiplication operator
- *
+ * <p>
  * Hint: multiplecation is repepative addition.
- *
  */
 public class MultiplyTwoNumbers {
 
@@ -19,10 +17,10 @@ public class MultiplyTwoNumbers {
     }
 
     private int multiplyNumber(int i, int i1) {
-        if(i1==0){
+        if (i1 == 0) {
             return 0;
-        }else{
-            return i+ multiplyNumber(i, i1 - 1);
+        } else {
+            return i + multiplyNumber(i, i1 - 1);
         }
     }
 }

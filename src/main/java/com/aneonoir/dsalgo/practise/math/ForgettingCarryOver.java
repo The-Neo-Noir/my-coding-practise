@@ -3,8 +3,8 @@ package com.aneonoir.dsalgo.practise.math;
 import org.junit.Test;
 
 /**
- *link : https://app.codesignal.com/arcade/code-arcade/loop-tunnel/xzeZqCQjpfDJuN72S
- *
+ * link : https://app.codesignal.com/arcade/code-arcade/loop-tunnel/xzeZqCQjpfDJuN72S
+ * <p>
  * struggle: sb append needs to do reverse,
  */
 public class ForgettingCarryOver {
@@ -16,16 +16,14 @@ public class ForgettingCarryOver {
 
     int additionWithoutCarrying(int param1, int param2) {
         StringBuffer sb = new StringBuffer();
-        int legnth= (param1+"").length()>=(param2+"").length()? (param1+"").length():(param2+"").length();
-        for(int i=0;i<legnth;i++){
-            sb.append(""+(((param1%10)+(param2%10))%10));
-            param1=param1/10;
-            param2=param2/10;
+        int legnth = (param1 + "").length() >= (param2 + "").length() ? (param1 + "").length() : (param2 + "").length();
+        for (int i = 0; i < legnth; i++) {
+            sb.append("" + (((param1 % 10) + (param2 % 10)) % 10));
+            param1 = param1 / 10;
+            param2 = param2 / 10;
         }
         return Integer.valueOf(sb.reverse().toString()).intValue();
     }
-
-
 
 
 }

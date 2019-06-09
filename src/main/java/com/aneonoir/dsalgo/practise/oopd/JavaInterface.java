@@ -1,3 +1,4 @@
+/*
 //Write your code here
 class MyCalculator implements AdvancedArithmetic {
     public int divisor_sum(int n) {
@@ -33,3 +34,4 @@ class MyCalculator implements AdvancedArithmetic {
     }
 16
 }
+*/

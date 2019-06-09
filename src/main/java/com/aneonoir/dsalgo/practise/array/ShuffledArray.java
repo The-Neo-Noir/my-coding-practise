@@ -28,9 +28,9 @@ public class ShuffledArray {
             }
         }
         list.sort((o1, o2) -> o1.compareTo(o2));
-        int i=0;
+        int i = 0;
         for (Integer integer : list) {
-            result[i++]=integer;
+            result[i++] = integer;
         }
         return result;
     }

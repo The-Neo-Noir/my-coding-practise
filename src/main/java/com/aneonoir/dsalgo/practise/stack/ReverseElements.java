@@ -8,9 +8,9 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Link : Coding interview questions; page 244, Problem 11
- *
+ * <p>
  * Recursion is not done, todo:
- *
+ * <p>
  * Solution:
  * approach1:
  * 1. Brute force with extra space
@@ -37,6 +37,25 @@ public class ReverseElements {
 
     }
 
+    private static void solutionInRecursion(Stack<Integer> integers) {
+
+        if (!integers.empty()) {
+            Integer pop = integers.pop();
+            solutionInRecursion(integers);
+            integers.push(pop);
+        } else {
+
+        }
+    }
+
+    private static Stack<Integer> solutionUsingExtraStack(Stack<Integer> integers) {
+        Stack<Integer> stack = new Stack<>();
+        while (!integers.empty()) {
+            stack.push(integers.pop());
+        }
+        return stack;
+    }
+
     @Test
     public void testResursion() {
         Stack<Integer> stack = new Stack<>();
@@ -50,24 +69,5 @@ public class ReverseElements {
         assertEquals(Integer.valueOf(5), stack.pop());
         assertEquals(Integer.valueOf(6), stack.pop());
 
-    }
-
-    private static void solutionInRecursion(Stack<Integer> integers) {
-
-        if (!integers.empty()) {
-            Integer pop = integers.pop();
-            solutionInRecursion(integers);
-            integers.push(pop);
-        }else{
-
-        }
-    }
-
-    private static Stack<Integer> solutionUsingExtraStack(Stack<Integer> integers) {
-        Stack<Integer> stack = new Stack<>();
-        while (!integers.empty()) {
-            stack.push(integers.pop());
-        }
-        return stack;
     }
 }

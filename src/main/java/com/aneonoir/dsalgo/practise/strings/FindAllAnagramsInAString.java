@@ -25,6 +25,27 @@ public class FindAllAnagramsInAString {
 
     }
 
+    private static boolean reduce(String substring, String sub) {
+        HashMap<Character, Integer> source = new HashMap<>();
+        HashMap<Character, Integer> target = new HashMap<>();
+
+        for (int i = 0; i < sub.length(); i++) {
+            if (source.containsKey(sub.charAt(i))) {
+                source.put(sub.charAt(i), source.get(sub.charAt(i) + 1));
+            } else {
+                source.put(sub.charAt(i), 1);
+            }
+        }
+        for (int i = 0; i < substring.length(); i++) {
+            if (target.containsKey(substring.charAt(i))) {
+                target.put(substring.charAt(i), target.get(substring.charAt(i) + 1));
+            } else {
+                target.put(substring.charAt(i), 1);
+            }
+        }
+        return source.equals(target);
+    }
+
     @Test
     public void test() {
         assertEquals(Arrays.asList(0, 1, 2), findAnagrams("abab", "ab"));
@@ -46,26 +67,5 @@ public class FindAllAnagramsInAString {
             }
         }
         return result;
-    }
-
-    private static boolean reduce(String substring, String sub) {
-        HashMap<Character, Integer> source = new HashMap<>();
-        HashMap<Character, Integer> target = new HashMap<>();
-
-        for (int i = 0; i < sub.length(); i++) {
-            if (source.containsKey(sub.charAt(i))) {
-                source.put(sub.charAt(i), source.get(sub.charAt(i) + 1));
-            } else {
-                source.put(sub.charAt(i), 1);
-            }
-        }
-        for (int i = 0; i < substring.length(); i++) {
-            if (target.containsKey(substring.charAt(i))) {
-                target.put(substring.charAt(i), target.get(substring.charAt(i) + 1));
-            } else {
-                target.put(substring.charAt(i), 1);
-            }
-        }
-        return source.equals(target);
     }
 }

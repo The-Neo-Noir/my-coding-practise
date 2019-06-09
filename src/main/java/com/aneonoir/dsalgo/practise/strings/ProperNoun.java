@@ -5,8 +5,6 @@ import org.junit.Test;
 /**
  * link: https://app.codesignal.com/arcade/code-arcade/book-market/2nSEQ8CGoddTJtnbo
  * struggle: a little bit converting asci to char
- *
- *
  */
 public class ProperNoun {
 

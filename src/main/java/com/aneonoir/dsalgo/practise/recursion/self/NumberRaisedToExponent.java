@@ -10,30 +10,31 @@ import static org.junit.Assert.assertEquals;
 public class NumberRaisedToExponent {
 
     @Test
-    public void when_10_1_10(){
-        assertEquals(10, numberRaisedToExponents(10,1));
+    public void when_10_1_10() {
+        assertEquals(10, numberRaisedToExponents(10, 1));
     }
 
     @Test
     public void when_2_4() {
-        assertEquals(4, numberRaisedToExponents(2,2));
+        assertEquals(4, numberRaisedToExponents(2, 2));
     }
 
     @Test
     public void when_0_1() {
 
-        assertEquals(1, numberRaisedToExponents(100,0));
+        assertEquals(1, numberRaisedToExponents(100, 0));
     }
 
     /**
      * If your solution looks like this , then lets discuss, ,see the number parameter
      * does not take part in the recursion's decision, can we save it , YES
-     * @see NumberRaisedToExponent.numberRaisedToExponentsCured()
+     *
      * @param number
      * @param exponent
      * @return
+     * @see NumberRaisedToExponent.numberRaisedToExponentsCured()
      */
-    public int numberRaisedToExponents(int number,int exponent) {
+    public int numberRaisedToExponents(int number, int exponent) {
         if (exponent == 0) {
             return 1;
         } else {
@@ -42,8 +43,9 @@ public class NumberRaisedToExponent {
     }
 
     /**
-     *  Has compilation error but get it.
-     *  fix it and test all the cases provided.
+     * Has compilation error but get it.
+     * fix it and test all the cases provided.
+     *
      * @param exponent
      * @return
      */
@@ -54,7 +56,7 @@ public class NumberRaisedToExponent {
         } else {
             return this.number * numberRaisedToExponents(this.number, exponent - 1);
         }*/
-      return 0;
+        return 0;
     }
 
 }

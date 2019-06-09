@@ -19,8 +19,8 @@ public class IsPower {
         for (int i = 2; i < 20; i++) {
             int power = i;
             for (int j = 1; j < n / 2; j++) {
-                power = power*i;
-                if(power>n){
+                power = power * i;
+                if (power > n) {
                     break;
                 }
                 if (power == n) {

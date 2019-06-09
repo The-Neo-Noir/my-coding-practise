@@ -6,13 +6,13 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 /**
- *link : https://leetcode.com/problems/palindrome-number/
- *
+ * link : https://leetcode.com/problems/palindrome-number/
+ * <p>
  * Appoach 1: Use string and convert the reverse to checck if its pallindrome
- *
+ * <p>
  * Approach 2: Use only mathematics, no string function;
- *
- *
+ * <p>
+ * <p>
  * TODO: do the solution
  */
 public class PalindromeNumber {
@@ -28,10 +28,6 @@ public class PalindromeNumber {
 
     // Using only mathematical
     public boolean isPalindrome(int x) {
-        if (x < 0) {
-            return false;
-        }else{
-            return true;
-        }
+        return x >= 0;
     }
 }

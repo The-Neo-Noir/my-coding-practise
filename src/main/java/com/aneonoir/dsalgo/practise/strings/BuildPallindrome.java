@@ -38,11 +38,11 @@ public class BuildPallindrome {
                     j++;
                 }
                 j = counter;
-                if(allPass){
+                if (allPass) {
                     break;
                 }
             }
-            st = st + reversedString.substring(reversedString.length()-counter, reversedString.length());
+            st = st + reversedString.substring(reversedString.length() - counter);
 
         }
         return st;

@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 /**
  * link: https://app.codesignal.com/arcade/code-arcade/well-of-integration/RaWLwT2eb96hp4N5Z/comments
- *
+ * <p>
  * Struggle:  is this greedy ?
- *
  */
 public class HouseOfCats {
 

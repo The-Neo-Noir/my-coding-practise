@@ -4,8 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *
- *
  * tag: recursion
  */
 public class ReverseANumber {
@@ -16,19 +14,19 @@ public class ReverseANumber {
     }
 
     private static String firstDigit() {
-        Pattern pattern=Pattern.compile("[0-9]+");
+        Pattern pattern = Pattern.compile("[0-9]+");
         Matcher matcher = pattern.matcher("1234s2222");
-        String max="";
-        while(matcher.find()){
+        String max = "";
+        while (matcher.find()) {
             String group = matcher.group();
             if (max.length() < group.length()) {
-                max=group;
+                max = group;
             }
             System.out.println(max);
         }
-        if("asdfa".indexOf(max)!=0){
+        if ("asdfa".indexOf(max) != 0) {
             return "";
-        }else{
+        } else {
             return max;
         }
     }

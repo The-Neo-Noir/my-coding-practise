@@ -6,9 +6,9 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * link: codeforces
- *
+ * <p>
  * approach: this is done using o(n) solution, quite bruteforce
- *
+ * <p>
  * can you solve it in O(1)
  */
 public class MaxDivisor {

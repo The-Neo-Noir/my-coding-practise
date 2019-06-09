@@ -8,7 +8,6 @@ import org.junit.Test;
 public class SumOfTwoRepresentation {
 
 
-
     @Test
     public void test() {
         countSumOfTwoRepresentations2(93, 24, 58);

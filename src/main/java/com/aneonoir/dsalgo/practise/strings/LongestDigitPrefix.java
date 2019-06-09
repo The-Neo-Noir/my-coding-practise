@@ -22,15 +22,15 @@ public class LongestDigitPrefix {
     String longestDigitsPrefix(String inputString) {
 
         String result = "";
-        if (!(inputString.charAt(0)+"").matches("\\d")) {
+        if (!(inputString.charAt(0) + "").matches("\\d")) {
             return result;
         }
         int counter = 0;
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < inputString.length(); i++) {
-            if((inputString.charAt(i)+"").matches("\\d")){
-                sb.append(inputString.charAt(i)+"");
-            }else{
+            if ((inputString.charAt(i) + "").matches("\\d")) {
+                sb.append(inputString.charAt(i) + "");
+            } else {
                 break;
             }
 

@@ -6,14 +6,38 @@ import static org.junit.Assert.*;
 
 /**
  * link: https://leetcode.com/problems/goat-latin/
- *
+ * <p>
  * struggle: how I wanted to deal with the spaces in between the words, I started with spliting the setence
- *  by \\s+ and then finding the words , but then I had to deal with the spaces , which I struggelded
- *
- *   Task: TODO: Can you do it without sp         v v v vvvbgh v          bvb litting the word
+ * by \\s+ and then finding the words , but then I had to deal with the spaces , which I struggelded
+ * <p>
+ * Task: TODO: Can you do it without sp         v v v vvvbgh v          bvb litting the word
  */
 public class GoatLatin {
 
+
+    public static void main(String[] args) {
+
+    }
+
+    private static String buildMa(int i) {
+        StringBuffer sb = new StringBuffer("ma");
+        for (int j = 0; j < i; j++) {
+            sb.append("a");
+        }
+        return sb.toString();
+    }
+
+    private static String manipulateConsonants(String word) {
+        StringBuilder sb = new StringBuilder(word);
+        sb.replace(0, word.length() - 1, sb.substring(1, word.length()))
+                .replace(word.length() - 1, word.length(), word.charAt(0) + "");
+        return sb.toString();
+    }
+
+    private static boolean startsWithVowelIgnoreCase(String inputString) {
+        final String input = inputString.toLowerCase();
+        return input.startsWith("a") || input.startsWith("e") || input.startsWith("i") || input.startsWith("o") || input.startsWith("u");
+    }
 
     @Test
     public void testIfVowels() {
@@ -55,18 +79,17 @@ public class GoatLatin {
 
         assertEquals("Applemaa inegarVmaaa  ", sb);
 
-         inputSetence ="RFd FvQoab d";
+        inputSetence = "RFd FvQoab d";
         String sb2 = buildGoatLanguage(inputSetence);
 
         assertEquals("FdRmaa vQoabFmaaa dmaaaa", sb2);
 
     }
 
-
     private String buildGoatLanguage(String inputSetence) {
         String[] words = inputSetence.split("\\s+");
         StringBuffer sb = new StringBuffer();
-        int currentIndex=0;
+        int currentIndex = 0;
         for (int i = 0; i < words.length; i++) {
             if (startsWithVowelIgnoreCase(words[i])) {
                 String s = captureSpaces(inputSetence, words[i]);
@@ -75,9 +98,9 @@ public class GoatLatin {
                         .append(s);
             } else {
                 String s = captureSpaces(inputSetence, words[i]);
-                   sb.append(new StringBuffer(manipulateConsonants(words[i])))
-                  .append(buildMa(i + 1))
-                  .append(s);
+                sb.append(new StringBuffer(manipulateConsonants(words[i])))
+                        .append(buildMa(i + 1))
+                        .append(s);
 
             }
         }
@@ -105,31 +128,29 @@ public class GoatLatin {
         assertEquals(" ", captureSpaces(input4, "apple"));
         assertEquals("", captureSpaces(input4, "cider"));
 
-        String input5="RFd FvQoab d";
+        String input5 = "RFd FvQoab d";
 
 
         assertEquals("", captureSpaces(input4, "d"));
 
 
-
     }
 
-
     private String captureSpaces(String inputSetence, String word) {
-        StringBuffer sb = new StringBuffer("");
+        StringBuffer sb = new StringBuffer();
         int i1 = inputSetence.indexOf(word);
-        if(i1 >0){
-            i1=i1;
-        }else{
-            i1=0;
+        if (i1 > 0) {
+            i1 = i1;
+        } else {
+            i1 = 0;
         }
-        int index = word.length() +i1;
-        while (index<inputSetence.length() && true) {
+        int index = word.length() + i1;
+        while (index < inputSetence.length() && true) {
 
-            if(inputSetence.charAt(index)==' '){
+            if (inputSetence.charAt(index) == ' ') {
                 sb.append(' ');
                 index++;
-            }else{
+            } else {
                 break;
             }
         }
@@ -137,38 +158,11 @@ public class GoatLatin {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-
-    }
-
-
     @Test
     public void testBUildMaaString() {
         String s = buildMa(1);
         String s1 = buildMa(2);
         assertEquals("maa", s);
         assertEquals("maaa", s1);
-    }
-
-    private static String buildMa(int i) {
-        StringBuffer sb = new StringBuffer("ma");
-        for (int j = 0; j < i; j++) {
-            sb.append("a");
-        }
-        return sb.toString();
-    }
-
-
-    private static String manipulateConsonants(String word) {
-        StringBuilder sb = new StringBuilder(word);
-        sb.replace(0, word.length() - 1, sb.substring(1, word.length()))
-                .replace(word.length() - 1, word.length(), word.charAt(0) + "");
-        return sb.toString();
-    }
-
-
-    private static boolean startsWithVowelIgnoreCase(String inputString) {
-        final String input = inputString.toLowerCase();
-        return input.startsWith("a") || input.startsWith("e") || input.startsWith("i") || input.startsWith("o") || input.startsWith("u");
     }
 }

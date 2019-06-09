@@ -1,16 +1,13 @@
 package com.aneonoir.dsalgo.practise.strings;
 
-import com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression;
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import org.junit.Test;
-import sun.tools.tree.CharExpression;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 /**
  * link: https://leetcode.com/problems/camelcase-matching/
- *
+ * <p>
  * TODO:
  */
 public class CamelCaseMatching {
@@ -22,8 +19,8 @@ public class CamelCaseMatching {
     }
 
     @Test
-    public void testPattern(){
-        Character a='A';
+    public void testPattern() {
+        Character a = 'A';
         assertTrue(isUpperCase(a));
         assertFalse(isUpperCase('b'));
 
@@ -31,25 +28,25 @@ public class CamelCaseMatching {
 
     private void DecodeString(String input) {
 
-        for (int  i= 0; i <input.length() ; i++) {
+        for (int i = 0; i < input.length(); i++) {
             StringBuffer sb = new StringBuffer();
             sb.append(input.charAt(i));
-            int runningIndex=i+1;
-            while(i+1<input.length()-1){
-                if(isUpperCase(input.charAt(i+1)))
+            int runningIndex = i + 1;
+            while (i + 1 < input.length() - 1) {
+                if (isUpperCase(input.charAt(i + 1)))
                     break;
-                else{
+                else {
                     runningIndex++;
                 }
             }
-            sb.append(input.substring(i + 1, runningIndex));
+            sb.append(input, i + 1, runningIndex);
         }
 
 
     }
 
     private boolean isUpperCase(Character character) {
-        String pattern="[A-Z]";
+        String pattern = "[A-Z]";
         return (character + "").matches(pattern);
     }
 }

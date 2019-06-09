@@ -38,13 +38,13 @@ public class SodokuSolution {
     }
 
     boolean sudoku(int[][] grid) {
-        boolean result=true;
-        for(int i=0;i<grid.length;i+=3){
-            for (int j = 0; j < grid.length; j+=3) {
-                System.out.printf("%d %d",i, j);
+        boolean result = true;
+        for (int i = 0; i < grid.length; i += 3) {
+            for (int j = 0; j < grid.length; j += 3) {
+                System.out.printf("%d %d", i, j);
                 Sodoku sodoku = buildThreeByThree(i, j, grid);
-                if(!sodoku.isValid()){
-                    result=false;
+                if (!sodoku.isValid()) {
+                    result = false;
                     break;
                 }
             }
@@ -52,10 +52,10 @@ public class SodokuSolution {
         return result;
     }
 
-    private Sodoku buildThreeByThree(int row,int col,int [] [] grid) {
-        int [] [] data= new int[3][3];
-        for (int i = row; i < row+3; i++) {
-            for (int j = col; j < col+3; j++) {
+    private Sodoku buildThreeByThree(int row, int col, int[][] grid) {
+        int[][] data = new int[3][3];
+        for (int i = row; i < row + 3; i++) {
+            for (int j = col; j < col + 3; j++) {
                 data[i % 3][j % 3] = grid[i][j];
             }
         }
@@ -63,19 +63,20 @@ public class SodokuSolution {
 
     }
 
-    class Sodoku{
+    class Sodoku {
 
         private final boolean isValid;
         int data[][] = new int[3][3];
 
         public Sodoku(int[][] data) {
-            this.data=data;
+            this.data = data;
             isValid = validate();
         }
 
-        public boolean isValid(){
+        public boolean isValid() {
             return isValid;
         }
+
         public boolean validate() {
             HashSet<Integer> integers = new HashSet<>();
             for (int i = 0; i < 3; i++) {
@@ -83,7 +84,7 @@ public class SodokuSolution {
                     integers.add(data[i][j]);
                 }
             }
-            return integers.size()==9;
+            return integers.size() == 9;
         }
     }
 

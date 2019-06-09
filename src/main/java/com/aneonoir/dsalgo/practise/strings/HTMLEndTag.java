@@ -19,12 +19,12 @@ public class HTMLEndTag {
     String htmlEndTagByStartTag(String startTag) {
         StringBuffer sb = new StringBuffer();
         sb.append("</");
-        int endIndex=startTag.length();
-        String substring ="";
-        if(startTag.contains(" ")){
-             endIndex = startTag.indexOf(" ");
-             substring=startTag.substring(1, endIndex)+">";
-        }else{
+        int endIndex = startTag.length();
+        String substring = "";
+        if (startTag.contains(" ")) {
+            endIndex = startTag.indexOf(" ");
+            substring = startTag.substring(1, endIndex) + ">";
+        } else {
             substring = startTag.substring(1, endIndex);
         }
         sb.append(substring);

@@ -6,14 +6,15 @@ public class Recursive {
         String recursive = recursive("((def))");
         System.out.println(recursive);
     }
-    static String recursive(String as){
-        if(as.indexOf('(')==0 && as.lastIndexOf(')')==as.length()-1){
-            return new StringBuffer(as.substring(1,as.length()-1)).reverse().toString();
-        }else{
 
-            String preText=as.substring(0,as.indexOf('('));
-            String postText=as.substring(as.lastIndexOf(')')+1,as.length());
-            return preText+recursive(as.substring(as.indexOf('('),as.lastIndexOf(')')+1))+postText;
+    static String recursive(String as) {
+        if (as.indexOf('(') == 0 && as.lastIndexOf(')') == as.length() - 1) {
+            return new StringBuffer(as.substring(1, as.length() - 1)).reverse().toString();
+        } else {
+
+            String preText = as.substring(0, as.indexOf('('));
+            String postText = as.substring(as.lastIndexOf(')') + 1);
+            return preText + recursive(as.substring(as.indexOf('('), as.lastIndexOf(')') + 1)) + postText;
         }
     }
 // (foo(bar(sar)))
