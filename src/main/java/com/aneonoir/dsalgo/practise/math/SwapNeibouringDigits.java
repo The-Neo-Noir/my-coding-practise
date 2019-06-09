@@ -13,8 +13,8 @@ import static org.junit.Assert.assertEquals;
 public class SwapNeibouringDigits {
     @Test
     public void testt() {
-        assertEquals(2143, swapNeighbouringDigits2(1234));
-        assertEquals(9898, swapNeighbouringDigits2(8989));
+        assertEquals(2143, swapNeighbouringDigits(1234));
+        assertEquals(9898, swapNeighbouringDigits(8989));
     }
 
     int swapNeighbouringDigits(int n) {
@@ -26,15 +26,15 @@ public class SwapNeibouringDigits {
         return Integer.parseInt(sb.toString());
     }
 
-    int swapNeighbouringDigits2(int n) {
-        StringBuffer sb = new StringBuffer();
-        int power = 2;
-        int number = 0
-        while (n > 0) {
-            n % 100
-            sb.insert(0, n % 100).reverse();
-            n /= 100;
-        }
-        return Integer.parseInt(sb.toString());
-    }
+//    int swapNeighbouringDigits2(int n) {
+//        StringBuffer sb = new StringBuffer();
+//        int power = 2;
+//        int number = 0
+//        while (n > 0) {
+//            n % 100
+//            sb.insert(0, n % 100).reverse();
+//            n /= 100;
+//        }
+//        return Integer.parseInt(sb.toString());
+//    }
 }
