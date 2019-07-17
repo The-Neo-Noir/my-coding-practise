@@ -5,9 +5,4 @@ package com.aneonoir.dsalgo.practise.strings;
  */
 public class ReducedString {
 
-    static String superReducedString(String s) {
-
-        return "";
-
-    }
 }
