@@ -13,7 +13,7 @@ public class JavaStdInAndStdoutTwo {
 
         // Write your code here.
 
-        System.out.println("String: " + s);
+        System.out.println("com.aneonoir.dsalgo.practise.strings.String: " + s);
         System.out.println("Double: " + d);
         System.out.println("Int: " + i);
     }

@@ -1,9 +1,9 @@
 Don't use == to float or double number to compare
 Use Float.compare or Double.compare
 
-String substring ( not subString() ) first index is inclusive , but last index is exclusive
+com.aneonoir.dsalgo.practise.strings.String substring ( not subString() ) first index is inclusive , but last index is exclusive
 
-StringBuffer.equals(String) will not lead to true , even if they are true
+StringBuffer.equals(com.aneonoir.dsalgo.practise.strings.String) will not lead to true , even if they are true
 
 (Math.log10(8) / Math.log10(2)); will give you 3
 
@@ -35,3 +35,16 @@ array[0].length; will give you the column it has
 
 
 Explore whatis merge in hashmap
+
+
+Character::getNumericValue
+
+Tree:
+    A top view ,
+
+
+Math:
+    GCD: greatest common divisor
+    GCF/HCF: greatest common factor
+    LCD: Lowest common denominator
+    LCM: lowest common multiple

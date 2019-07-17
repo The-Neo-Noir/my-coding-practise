@@ -57,7 +57,7 @@
 //    }
 //
 //
-//    void populateMap(Map<Point, Integer> map, Point starting, Point p, String instruction) {
+//    void populateMap(Map<Point, Integer> map, Point starting, Point p, com.aneonoir.dsalgo.practise.strings.String instruction) {
 //        if (instruction.equals("xinc")) {
 //            for (int i = starting.x + 1; i < p.x; i++) {
 //                Point pL = new Point(i, p.y);
