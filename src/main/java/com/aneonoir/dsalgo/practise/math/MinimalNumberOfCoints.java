@@ -1,7 +1,5 @@
 package com.aneonoir.dsalgo.practise.math;
 
-import java.util.Arrays;
-
 /**
  * link; https://app.codesignal.com/challenge/jmv55DMT7ywJaPcsC
  */
@@ -13,12 +11,7 @@ public class MinimalNumberOfCoints {
             count += (price / coins[i]);
             price = price % coins[i];
         }
-        boolean[][] matrix = new boolean[][]{{false, true, true},
-                {true, false, false}};
-        Arrays.stream(matrix).forEach().forEach((ele) -> {
-            ele ? count++ : null;
-        });
-        Arrays.stream(matrix).forEach();
+
         return count;
     }
 
