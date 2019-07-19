@@ -16,8 +16,8 @@ public class ArrayConversion {
     @Test
     public void test() {
         assertEquals(186, arrayConversion(new int[]{1, 2, 3, 4, 5, 6, 7, 8}));
-        assertEquals(186, arrayConversion(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
-
+        // assertEquals(186, arrayConversion(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
+        System.out.println("http://tinyurl.com/4e9iAk".substring("http://tinyurl.com/4e9iAk".lastIndexOf("/") + 1));
 
     }
 

@@ -48,3 +48,5 @@ Math:
     GCF/HCF: greatest common factor
     LCD: Lowest common denominator
     LCM: lowest common multiple
+
+ Integer.toHexString
