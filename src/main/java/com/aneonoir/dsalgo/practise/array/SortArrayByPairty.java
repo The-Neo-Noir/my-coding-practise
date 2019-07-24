@@ -4,6 +4,7 @@ package com.aneonoir.dsalgo.practise.array;
  * link: https://leetcode.com/problems/sort-array-by-parity/
  * <p>
  * approach: I used one extra space, to solve it. But can you use two pointer technqique for solving it ?
+ * TODO:
  */
 public class SortArrayByPairty {
     public int[] sortArrayByParity(int[] A) {
