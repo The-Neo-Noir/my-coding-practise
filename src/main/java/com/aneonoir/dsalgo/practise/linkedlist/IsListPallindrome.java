@@ -13,6 +13,8 @@ import java.util.Stack;
 public class IsListPallindrome {
 
     public static void main(String[] args) {
+        System.out.println(10 + (1 << 2));
+
         ListNode<Integer> i = new ListNode<>(1);
         i.next = new ListNode<>(1000000000);
         i.next.next = new ListNode<>(-1000000000);
@@ -31,7 +33,6 @@ public class IsListPallindrome {
         }
         boolean result = true;
         while (temp != null) {
-            int pop = st.pop();
             if (st.pop().equals(temp.value)) {
                 result &= false;
                 break;
