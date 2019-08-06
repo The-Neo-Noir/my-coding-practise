@@ -7,20 +7,29 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  */
 public class RemoveDuplicatesfromSortedList {
 
-    public ListNode deleteDuplicates(ListNode head) {
+    public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(1);
+        head.next.next = new ListNode(2);
+        deleteDuplicates(head);
+    }
+
+
+    public static ListNode deleteDuplicates(ListNode head) {
         ListNode temp = head;
         while (head != null) {
             int currentVal = head.val;
-
-            if (head.next != null && head.next.val == currentVal) {
-                head.next = head.next.next;
+            ListNode current = head.next;
+            while (current != null && current.val == currentVal) {
+                current = current.next;
             }
+            head.next = current;
             head = head.next;
         }
         return temp;
     }
 
-    class ListNode {
+    static class ListNode {
         int val;
         ListNode next;
 
