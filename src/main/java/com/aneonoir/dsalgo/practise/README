@@ -50,3 +50,10 @@ Math:
     LCM: lowest common multiple
 
  Integer.toHexString
+
+
+What are you doing wrong ?
+ int [] sortedHieghts=heights;
+        Arrays.sort(sortedHieghts);
+
+Use Arrays.copyOf() when you want a copy of the array .

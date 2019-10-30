@@ -1,0 +1,40 @@
+All possible sorting algorithms:
+    1. Bubble sort
+    2. Selection sort
+    3. Insertion Sort
+    4. Shell Sort
+    5. Radix sort
+    6. Quick Sort
+        > Dual pivot quick sort
+        > 3 way quick sort
+        > Quick sort on singly linked list
+        > quick sort on double linked list
+
+    7. Merge Sort
+    8. Counting Sort
+    9. Radix Sort
+    10.Heap sort
+    11.Bucket Sort
+
+
+
+   Dutch national flag problem.
+
+
+   Some problems to try :
+   1. Sort the numbers according to their product of digits:
+        https://www.geeksforgeeks.org/sort-the-numbers-according-to-their-product-of-digits/
+   2.  Count of elements which are not at the correct position
+       https://www.geeksforgeeks.org/count-of-elements-which-are-not-at-the-correct-position/
+   3. Sort elements by modulo with K
+        geeksforgeeks.org/sort-elements-by-modulo-with-k/
+   4. Find Kth element in an array containing odd elements first and then even elements
+        https://www.geeksforgeeks.org/find-kth-element-in-an-array-containing-odd-elements-first-and-then-even-elements/
+   5. Sort elements by frequency
+        https://www.geeksforgeeks.org/sort-elements-by-frequency/
+   6. Sort an array without changing position of negative numbers
+        https://www.geeksforgeeks.org/sort-an-array-without-changing-position-of-negative-numbers/
+   7. Sort prime numbers of an array in descending order
+        https://www.geeksforgeeks.org/sort-prime-numbers-of-an-array-in-descending-order/
+   8.
+

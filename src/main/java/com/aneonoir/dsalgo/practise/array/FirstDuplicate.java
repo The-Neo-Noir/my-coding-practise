@@ -2,6 +2,8 @@ package com.aneonoir.dsalgo.practise.array;
 
 /**
  * link: https://app.codesignal.com/interview-practice/task/pMvymcahZ8dY4g75q
+ *
+ * approach: I could use additional n space , and use that to store the elements
  */
 public class FirstDuplicate {
 
