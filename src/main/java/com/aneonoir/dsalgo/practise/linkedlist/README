@@ -1,3 +1,37 @@
+List: Notes and Tips and Tricks and Questions
+    Java list interface , ordered collection
+    ArrayList,LinkedList , Vector
+    AbstractList
+abstract data type , not a concrete data structure, these are interfaces in java, specifying
+the specs on what that type of data  exhibits behavior
+
+ArrayLists:
+    > underlying/backing data structure is array.
+    > If you are retrieving more than writing then this is a choice to go
+    > If you know the capacity in advanced then please do using the ArrayList() capacity.
+    > capacity vs size: capacity means what is the initial size of the array after its filled it has to expand
+    where as size is only what is added to the arraylist.
+     the default initial capacity is 10.
+    >It implements  List and RandomAccess interface which is a marker interface.
+    > you can update an element by using set(index,object);
+    > size : o(1)
+    > add() : o(1);
+    > add(index,object) : o(n) , it shifts the elements.if it has on its right
+    > get(i) : o(1)
+    > toArray() return  object[]
+    > toArray(T[]); return the type specified
+    >contains() method expects the object to override equals method, but not hashcode, but
+    its a good practise to override the hashcode , lest we use the object in hash based collections
+       contains() ; o(n)
+    > indexOf(index) : o(n)
+
+    
+
+
+
+
+
+
 implement a singly linked list class
 
 
