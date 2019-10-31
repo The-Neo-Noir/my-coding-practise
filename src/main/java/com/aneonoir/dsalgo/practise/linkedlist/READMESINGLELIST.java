@@ -51,13 +51,38 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  * <p>
  * 5. Remove duplicates from unsorted linked list
  * https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/
+ *
+ *
  * <p>
  * 6. swap nodes in a linked list without swapping data
  * It turned out to be more hard, I tried, swapping nodes are freaking difficult.
  * <p>
+ *
+ *
  * 7.Move last element to front of a given Linked List
  * https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/
+ *
+ * 8. Write a function to get the intersection point of two Linked Lists
+ *    Approach : used two stack , and poped from each until they dont match
+ * {@link IntersctionOfTwoLInkedList}
+ * 10. Delete a given node without head  pointer
+ *     geekforgeek
+ *    Approach : Don't think you are going to delete a node going to work, rather , shift the elements to the left
+ *      {@link DeleteNodeWithoutHead}
+ *
+ * 11. Segregate even and odd nodes in a Linked List
+ *      method 1: create two separate lists and merge them by even then odd
+ *      method 2: TODO : there is a way in geeksforgeesk must try it first
+ *
+ *      {@link SegregateEvenOddList}
+ *
+ *
+ * 12: Print linked list without actually reversing it .
+ *      approach: use recursion TODO:
+ * 13:
+ *
+ *
  */
-class README {
+public class READMESINGLELIST {
 
 }

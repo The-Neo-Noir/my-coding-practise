@@ -21,7 +21,7 @@ public class PalindormeListCheckUsingRecursion {
             Node retu = checkrecursive(head.next, temp);
 
             System.out.println("enty" + temp2.value + "  " + retu.value);
-
+            return null;
         }
 
     }
