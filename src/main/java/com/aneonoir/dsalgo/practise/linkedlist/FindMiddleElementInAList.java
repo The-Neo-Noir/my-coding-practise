@@ -36,12 +36,12 @@ public class FindMiddleElementInAList {
 
         int counter = 0;
         int middleElement = 0;
-        while (node.getNextNode() != null) {
+        while (node.next != null) {
             if (counter == middle) {
-                middleElement = node.getValue();
+                middleElement = node.value;
                 break;
             } else {
-                node = node.getNextNode();
+                node = node.next;
                 counter++;
             }
         }
@@ -49,10 +49,10 @@ public class FindMiddleElementInAList {
     }
 
     private static int calculateSize(Node node, int count) {
-        if (node.getNextNode() == null) {
+        if (node.next == null) {
             return count;
         } else {
-            return calculateSize(node.getNextNode(), count + 1);
+            return calculateSize(node.next, count + 1);
         }
     }
 

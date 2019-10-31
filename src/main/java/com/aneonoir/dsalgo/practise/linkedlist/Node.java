@@ -2,23 +2,15 @@ package com.aneonoir.dsalgo.practise.linkedlist;
 
 
 public class Node {
-    private int value;
-    private Node nextNode;
+    public int value;
+    public Node next;
 
 
     public Node(int value) {
         this.value = value;
     }
 
-    public Node getNextNode() {
-        return nextNode;
-    }
-
-    public void addNode(Node node) {
-        this.nextNode = node;
-    }
-
-    public int getValue() {
-        return this.value;
+    public void addNode(Node node3) {
+        this.next = node3;
     }
 }

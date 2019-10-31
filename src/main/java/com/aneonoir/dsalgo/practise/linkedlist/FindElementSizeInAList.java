@@ -36,17 +36,17 @@ public class FindElementSizeInAList {
 
     //struggle:
     private static int calculateSize(Node node, int count) {
-        if (node.getNextNode() == null) {
+        if (node.next == null) {
             return count;
         } else {
-            return calculateSize(node.getNextNode(), count + 1);
+            return calculateSize(node.next, count + 1);
         }
     }
 
     public static int calculateSizeNonRecursive(Node node) {
         int count = 1;
-        while (node.getNextNode() != null) {
-            node = node.getNextNode();
+        while (node.next != null) {
+            node = node.next;
             count++;
         }
         return count;
