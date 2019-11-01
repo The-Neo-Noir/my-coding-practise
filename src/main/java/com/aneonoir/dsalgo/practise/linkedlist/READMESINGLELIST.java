@@ -79,7 +79,14 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  *
  * 12: Print linked list without actually reversing it .
  *      approach: use recursion TODO:
- * 13:
+ * 13:Find the Sum of Last N nodes of the Linked List
+ *    link: https://practice.geeksforgeeks.org/problems/find-the-sum-of-last-n-nodes-of-the-linked-list/1
+ *    apporach: used a stack
+ *    {@link LastNNodeSum }
+ *
+ *  14: Linked list matrix
+ *  link: https://practice.geeksforgeeks.org/problems/linked-list-matrix/1
+ *   {@link LinkedListMatrix}
  *
  *
  */
