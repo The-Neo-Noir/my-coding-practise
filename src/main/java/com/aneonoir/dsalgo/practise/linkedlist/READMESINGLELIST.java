@@ -91,6 +91,17 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  *  link: https://practice.geeksforgeeks.org/problems/linked-list-matrix/1
  *   {@link LinkedListMatrix}
  *
+ *   15: Detect loop in a linked list
+ *   link: https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/
+ *     Approach: Using a HashMap
+ *     Approach2 : Using modified data structure , see using visited
+ *     Approach 3: Using Floyd's
+ *   16. Remove every k-th node of the linked list
+ *     Approach : A simple bruteforce one.
+ *
+ *   17: linked list of strings forms a palindrome
+ *     approach:{@link ListPalindromeStringcheck}
+ *
  *
  */
 public class READMESINGLELIST {
