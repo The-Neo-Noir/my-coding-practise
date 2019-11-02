@@ -103,6 +103,13 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  *     approach:{@link ListPalindromeStringcheck}
  *
  *
+ *   18: Decimal Equivalent of Binary Linked List
+ *      approach: solved using iterative and a stack approach , wanted to solve it using stac.
+ *         {@link DecimalEquivalentBinaryLinkedLIst}
+ *       TODO:
+ *   https://practice.geeksforgeeks.org/problems/decimal-equivalent-of-binary-linked-list/1
+ *
+ *
  */
 public class READMESINGLELIST {
 
