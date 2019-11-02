@@ -2,11 +2,6 @@ package com.aneonoir.dsalgo.practise.linkedlist;
 
 /**
  * implement a singly linked list class
- * <p>
- * <p>
- * <p>
- * <p>
- * <p>
  * warm up questions: Warm up questions are generally datastructure questions to get
  * your basic understanding tested.
  * <p>
@@ -59,8 +54,16 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  * <p>
  *
  *
- * 7.Move last element to front of a given Linked List
- * https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/
+ * 7. Swap the head and the tail nodes
+ *
+ *      Its pretty straight forward , however I struggled
+ *      // remember the cases when head and tail are next to each other
+ *      // remember the pass by value in java
+ *      // remember the single node case
+ *      {@link SwapHeadAndTailNodes}
+ * 8 . Move last element to front of a given Linked List
+ *  https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/
+ *
  *
  * 8. Write a function to get the intersection point of two Linked Lists
  *    Approach : used two stack , and poped from each until they dont match
