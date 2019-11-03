@@ -8,6 +8,8 @@ import java.util.Stack;
 
 /**
  * link: https://www.hackerrank.com/challenges/balanced-brackets/submissions/code/82875740?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues
+ *
+ * Sometimes you get stuck , TODO: practice again .
  */
 public class BalancedBrackets {
 
