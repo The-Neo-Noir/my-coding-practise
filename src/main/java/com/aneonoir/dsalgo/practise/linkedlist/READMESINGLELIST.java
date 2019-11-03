@@ -113,6 +113,20 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  *
      *   link: https://www.geeksforgeeks.org/insert-node-middle-linked-list/
  *
+ *   20: Delete alternate nodes of a Linked List
+ *
+ *     link: https://practice.geeksforgeeks.org/problems/delete-alternate-nodes/1
+ *      approach: iterative, {@link DeleteAlternateNodes}
+ *     TODO: do it in recursion as well.
+ *
+ *
+ *
+ *
+ *
+ *
+ *     DOUBLELINKEDLIST :
+ *     {@link com.aneonoir.dsalgo.practise.linkedlist.doublelinkedlist.ReadMeDoublyLinkedList}
+ *
  */
 public class READMESINGLELIST {
 

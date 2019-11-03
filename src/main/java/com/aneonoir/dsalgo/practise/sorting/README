@@ -5,6 +5,7 @@ All possible sorting algorithms:
     4. Shell Sort
     5. Radix sort
     6. Quick Sort
+          Select the pivot on left most , right most or the median
         > Dual pivot quick sort
         > 3 way quick sort
         > Quick sort on singly linked list
@@ -14,6 +15,7 @@ All possible sorting algorithms:
     8. Counting Sort
     9. Radix Sort
     10.Heap sort
+            > If you need the largest Item then min heap , if you need smallest item then max heap
     11.Bucket Sort
 
 
