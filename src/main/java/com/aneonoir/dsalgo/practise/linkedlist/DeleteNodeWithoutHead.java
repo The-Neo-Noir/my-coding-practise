@@ -1,5 +1,9 @@
 package com.aneonoir.dsalgo.practise.linkedlist;
 
+/**
+ * link: https://leetcode.com/problems/delete-node-in-a-linked-list/submissions/
+ *
+ */
 public class DeleteNodeWithoutHead {
 
     void deleteNode(Node node) {
