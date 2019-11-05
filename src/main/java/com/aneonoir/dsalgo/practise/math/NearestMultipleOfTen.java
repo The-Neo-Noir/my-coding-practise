@@ -7,7 +7,7 @@ import java.util.Scanner;
  * link: https://practice.geeksforgeeks.org/problems/nearest-multiple-of-10/0
  * Nearest multiple of 10
  *  * approach: the simplest approach will be  use bigDecimal which solves the problem easily
- * followup : TODO:  can you do it without using bigdecimal ?
+ * followup : TODO:  can you do it without using bigdecimal ? Hint what makes a number multiple of 10 , do it using strings ??
  *
  */
 public class NearestMultipleOfTen {

@@ -2,6 +2,7 @@ package com.aneonoir.dsalgo.practise.linkedlist;
 
 /**
  * link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+ * link: https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1/?ref=self
  * <p>
  * Not as easy as it sounds. TODO: practise again .
  */
