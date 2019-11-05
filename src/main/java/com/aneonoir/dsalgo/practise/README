@@ -1,10 +1,6 @@
 Don't use == to float or double number to compare
 Use Float.compare or Double.compare
 
-com.aneonoir.dsalgo.practise.strings.String substring ( not subString() ) first index is inclusive , but last index is exclusive
-
-StringBuffer.equals(com.aneonoir.dsalgo.practise.strings.String) will not lead to true , even if they are true
-
 (Math.log10(8) / Math.log10(2)); will give you 3
 
 perfect square has odd factors
@@ -18,9 +14,23 @@ Map:
 
 You can use        Character.isUpperCase() or Character.isLowerCase()
 
-
+=======================
+STRINGS
+=======================
 asci code : a-97
             z-122
+--------------------
+
+com.aneonoir.dsalgo.practise.strings.String substring ( not subString() ) first index is inclusive , but last index is exclusive
+
+------------
+StringBuffer.equals(com.aneonoir.dsalgo.practise.strings.String) will not lead to true , even if they are true
+----------
+((char)(i+97)) : to convert to char ie 'a' when i=0;
+--------
+what is lexicographically ??????
+-------
+
 
 array: find all the rows , columns and diagonals of a given square matrix
     diagonal1: when i==j

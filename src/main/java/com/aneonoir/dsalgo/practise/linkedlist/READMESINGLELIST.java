@@ -119,7 +119,18 @@ package com.aneonoir.dsalgo.practise.linkedlist;
  *      approach: iterative, {@link DeleteAlternateNodes}
  *     TODO: do it in recursion as well.
  *
+ *   22: Delete Middle of Linked List
+ *       TODO: can you do it using recursion ?
  *
+ *   {@link DeleteMiddleOfList}
+ *
+ *
+ *   21: Revese a link list.
+ *     > Iterative three pointer technique approach
+ *       {@link ReverseLinkedListThreePointerTechnique}
+ *     > Recursive apporach
+ *      TODO:
+ *     > Using a stack  TODO:
  *
  *
  *

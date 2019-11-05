@@ -13,4 +13,12 @@ public class Node {
     public void addNode(Node node3) {
         this.next = node3;
     }
+
+    public void print() {
+        Node temp = this;
+        while (temp != null) {
+            System.out.print(temp.value + "->");
+            temp = temp.next;
+        }
+    }
 }
