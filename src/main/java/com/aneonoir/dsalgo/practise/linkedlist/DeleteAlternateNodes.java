@@ -13,7 +13,11 @@ public class DeleteAlternateNodes {
      * @param head
      */
 
-    public void deleteAlternate (Node head){
+    public static void main(String[] args) {
+
+    }
+
+    public static void deleteAlternate(Node head) {
         Node temp=head;
         while(temp!=null){
             if ( temp.next!=null){
@@ -23,6 +27,19 @@ public class DeleteAlternateNodes {
             }
             System.out.print(temp.value+" ");
             temp= temp.next;
+        }
+    }
+
+    public static void deleteAlternateS(Node head) {
+        if (head != null) {
+            Node cur = head;
+            Node alt = head;
+
+            while (cur != null && cur.next != null) {
+                alt = cur.next;
+                cur.next = alt.next;
+                cur = cur.next;
+            }
         }
     }
 }

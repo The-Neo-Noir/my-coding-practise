@@ -3,6 +3,9 @@ package com.aneonoir.dsalgo.practise.tree;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Using recursion
+ */
 public class LevelOrderTraversalRecursive {
 
     public static void main(String[] args) {
