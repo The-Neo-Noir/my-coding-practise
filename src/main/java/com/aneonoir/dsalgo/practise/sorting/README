@@ -44,3 +44,19 @@ Quicksort:
         https://www.geeksforgeeks.org/sort-prime-numbers-of-an-array-in-descending-order/
    8.
 
+
+Questions
+> Warm up:
+    Bubble Sort:
+    =================
+    Notes:
+        Comparision based sorting.
+        Is Stable sort: Yes
+        Best case time complexity: o(n) or o(n*n) depending on implementation
+        Worst case time complexity : o(n*n)
+        In place: yes
+
+
+    > implement bubble sort: see BubbleSort.java
+    > implement bubble sort with best case as o(n) , see BubbleSortWithOnApproach.java
+

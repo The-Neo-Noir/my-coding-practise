@@ -2,8 +2,10 @@ package com.aneonoir.dsalgo.practise.sorting;
 
 /**
  * link: https://app.codesignal.com/interview-practice/task/RDt7X5xswpwWHSone
+ * link: https://practice.geeksforgeeks.org/problems/bubble-sort/1
  */
 public class BubbleSort {
+
 
     int[] bubbleSort(int[] items) {
 
