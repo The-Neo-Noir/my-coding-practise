@@ -1,3 +1,50 @@
+package com.aneonoir.dsalgo.practise.tree;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+/**
+ * link: https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/
+ * tag: tree,height,interview
+ *
+ * Did a bfs traversal to know the , kind of slow.
+ * Runtime: 2 ms, faster than 11.46% of Java online submissions for Maximum Depth of Binary Tree.
+ * Memory Usage: 39.2 MB, less than 94.62% of Java online submissions for Maximum Depth of Binary Tree.
+ * What could be a better way ????
+ */
+
+public class HeightFinding {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
+
+    public int maxDepth(TreeNode root) {
+        int depth = 0;
+        Queue<TreeNode> que = new LinkedList<>();
+        if (root != null) {
+            que.add(root);
+        }
+        while (!que.isEmpty()) {
+            List<TreeNode> ls = new LinkedList<>();
+            while (!que.isEmpty()) {
+                ls.add(que.remove());
+            }
+            for (TreeNode node : ls) {
+                if (node.left != null) que.add(node.left);
+                if (node.right != null) que.add(node.right);
+            }
+            depth++;
+        }
+        return depth;
+    }
+}
 //package com.aneonoir.dsalgo.practise.tree;
 //
 //import java.util.ArrayDeque;

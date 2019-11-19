@@ -15,6 +15,9 @@ import java.util.Map;
  * Slow performance , perhaps due to the look up being done in the isAlreadyTaken,
  * <p>
  * Attempt one:  removed the value lookup , instead put in the hashset, but no still no performance improvment.
+ *
+ * tag: string,pattern,interview
+ * TODO: need to improve on the performance
  */
 public class WordPattern {
     public boolean wordPattern(String pattern, String str) {
