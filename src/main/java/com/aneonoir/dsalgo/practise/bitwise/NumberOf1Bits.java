@@ -5,7 +5,7 @@ package com.aneonoir.dsalgo.practise.bitwise;
  * <p>
  * approach: right shift and & operator.
  * <p>
- * tags: right shift , bitwise, & operator ,
+ * tags: right shift , bitwise, & operator , interview
  * <p>
  * learnings: if ((n & 1) == 1) { is correct but if(n&1==1) is compilation error
  */
