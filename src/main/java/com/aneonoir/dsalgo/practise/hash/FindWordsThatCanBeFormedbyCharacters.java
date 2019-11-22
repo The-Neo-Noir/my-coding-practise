@@ -6,6 +6,9 @@ import java.util.HashMap;
  * linK: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
  * <p>
  * approach: Solved using two hashmaps, can you improve it. Its very slow.
+ *
+ * Runtime: 83 ms, faster than 7.07% of Java online submissions for Find Words That Can Be Formed by Characters.
+ * Memory Usage: 38.9 MB, less than 100.00% of Java online submissions for Find Words That Can Be Formed by Characters.
  * <p>
  * tag: interview,string,array, hashmap
  */
