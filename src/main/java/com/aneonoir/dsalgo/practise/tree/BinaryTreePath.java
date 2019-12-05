@@ -6,6 +6,7 @@ import java.util.List;
  * a Major struggle
  */
 public class BinaryTreePath {
+
     public static void main(String[] args) {
 
         BinaryTreePath binaryTreePath = new BinaryTreePath();
@@ -20,26 +21,24 @@ public class BinaryTreePath {
 
     public List<String> binaryTreePaths(TreeNode root) {
         String strings = binaryTreePath(root, new StringBuffer());
+        System.out.println(strings);
         return null;
     }
 
 
     private String binaryTreePath(TreeNode root, StringBuffer sbr) {
         if (root.left == null && root.right == null) {
-            return sbr.toString() + "" + root.val + "";
+            System.out.println(root.val + "");
+            return root.val + "";
         } else {
-            String s = "";
-            String ts = "";
-            StringBuffer sb = new StringBuffer();
-            if (root.left != null) {
-
-                s = binaryTreePath(root.left, sb.append(root.val + "->"));
-            }
+            String rootS = root.val + "->";
+            String rootR = root.val + "->";
+            if (root.left != null)
+                rootS += binaryTreePath(root.left, sbr);
             if (root.right != null) {
-
-                ts = binaryTreePath(root.right, sb.append(root.val + "->"));
+                rootR += binaryTreePath(root.right, sbr);
             }
-            return s + ts;
+            return rootS + "SSS" + rootR;
         }
     }
 }
