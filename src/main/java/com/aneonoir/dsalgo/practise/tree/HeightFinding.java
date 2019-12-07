@@ -6,6 +6,8 @@ import java.util.Queue;
 
 /**
  * link: https://leetcode.com/problems/maximum-depth-of-binary-tree/submissions/
+ * link: https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1/
+ *
  * tag: tree,height,interview
  *
  * Did a bfs traversal to know the , kind of slow.
