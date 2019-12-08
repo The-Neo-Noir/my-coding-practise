@@ -5,6 +5,8 @@ package com.aneonoir.dsalgo.practise.math;
  * <p>
  * <p>
  * struggle: numbers negative or 0 should be checked.
+ *
+ * Note: 0 is not power of 2 , REMEMBEr and (n & (n-1)) is not applied for 0 , so better do a return if input is 0
  */
 public class PowerOfTwo {
     public boolean isPowerOfTwo(int n) {
