@@ -2,6 +2,7 @@ package com.aneonoir.dsalgo.practise.math;
 
 /**
  * link: https://leetcode.com/problems/power-of-two/
+ *       https://practice.geeksforgeeks.org/problems/power-of-2/0
  * <p>
  * <p>
  * struggle: numbers negative or 0 should be checked.
