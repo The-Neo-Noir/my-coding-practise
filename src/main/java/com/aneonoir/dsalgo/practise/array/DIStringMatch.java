@@ -5,6 +5,11 @@ package com.aneonoir.dsalgo.practise.array;
  * <p>
  * Initially I could not find a way to solve it. I thought the way I solved it as a hunch, but
  * never fully dry run my idea before code. Next time always dry run your idea.
+ *
+ * TODO: a question may be a follow up is at https://practice.geeksforgeeks.org/problems/number-following-a-pattern/0
+ *
+ * A must do .
+ * tag: string, array, interview,
  */
 public class DIStringMatch {
 
