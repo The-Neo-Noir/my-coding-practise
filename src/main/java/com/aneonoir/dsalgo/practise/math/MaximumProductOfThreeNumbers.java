@@ -7,7 +7,9 @@ import java.util.Arrays;
  * <p>
  * approach: used sorting , can you solve it using on O(n) ??
  * <p>
- * TOOD: interview, math,
+ *  Runtime: 15 ms, faster than 47.37% of Java online submissions for Maximum Product of Three Numbers.
+ * TODO:  need to do it faster .
+ * tag: : interview, math,
  */
 public class MaximumProductOfThreeNumbers {
     public int maximumProduct(int[] nums) {
