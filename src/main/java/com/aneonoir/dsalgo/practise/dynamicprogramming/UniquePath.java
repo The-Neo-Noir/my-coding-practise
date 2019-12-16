@@ -5,12 +5,12 @@ package com.aneonoir.dsalgo.practise.dynamicprogramming;
  *
  * tag: interview,dynamic programming
  */
-public class Uni {
+public class UniquePath {
 
     int[][] store = null;
 
     public static void main(String[] args) {
-        int i = new Uni().uniquePaths(19, 13);
+        int i = new UniquePath().uniquePaths(19, 13);
         System.out.println(i);
     }
 
