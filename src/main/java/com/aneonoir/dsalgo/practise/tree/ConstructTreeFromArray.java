@@ -3,34 +3,41 @@ package com.aneonoir.dsalgo.practise.tree;
 /**
  * link: https://practice.geeksforgeeks.org/problems/construct-binary-tree-from-parent-array/1
  * <p>
- * approach: wrong assumption, assuming the first ever data in the array is going to the
+ * approach: wrong assumption, assuming the first ever data in the array is going to the,
+ * Finally solved it.
+ *
+ * tag: construct tree, tree, interview,
  */
 public class ConstructTreeFromArray {
 
     public static void main(String[] args) {
+        //   createTree(new int[]{-1, 0, 0, 1, 1, 3, 5}, 7);
         createTree(new int[]{1, 13, 31, 7, 17, 33, 27, 1, 5, 15, 19, 3, 33, 17, 19, 21, 23, 25, 31, 11, 29, 13, 27, 7, 25, -1, 23, 15, 3, 11, 21, 5, 9, 9}, 34);
     }
 
     public static Node createTree(int arr[], int n) {
-        Node root = null;
+        int root = 0;
         Node nodes[] = new Node[arr.length];
         for (int i = 0; i < arr.length; i++) {
             int parent = arr[i];
             if (parent == -1) {
-                root = new Node(i);
-                nodes[i] = root;
-            } else {
-                if (nodes[parent] != null && nodes[parent].left == null) {
-                    nodes[parent].left = new Node(i);
-                    nodes[i] = nodes[parent].left;
+                root = i;
+            }
+            nodes[i] = new Node(i);
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            int parent = arr[i];
+            if (parent != -1) {
+                if (nodes[parent].left == null) {
+                    nodes[parent].left = nodes[i];
                 } else {
-                    if (nodes[parent] != null)
-                        nodes[parent].right = new Node(i);
-                    nodes[i] = nodes[parent].right;
+                    nodes[parent].right = nodes[i];
                 }
             }
+
         }
-        return root;
+        return nodes[root];
     }
 
 }
