@@ -94,3 +94,13 @@ The correct approach would be
    }
 Assuming this iterator supports the remove() operation.
 
+
+
+======
+Strings
+======
+
+toLowerCase() : converts the string to lowercase
+Character.isUpperCase(c) : returns true if the the given character is upper case .
+
+
