@@ -1,9 +1,5 @@
 package com.aneonoir.dsalgo.practise.strings;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
-
 /**
  * link: https://leetcode.com/problems/goat-latin/
  * <p>
@@ -11,13 +7,64 @@ import static org.junit.Assert.*;
  * by \\s+ and then finding the words , but then I had to deal with the spaces , which I struggelded
  * <p>
  * Task: TODO: Can you do it without sp         v v v vvvbgh v          bvb litting the word
+ * <p>
+ * <p>
+ * <p>
+ * update: solved it, my earlier assumption was wrong, there is only a single space between the words.
+ *
+ * solved , but the runtime can be improved.
+ *
+ * Runtime: 6 ms, faster than 15.90% of Java online submissions for Goat Latin.
+ * Memory Usage: 35.9 MB, less than 100.00% of Java online submissions for Goat Latin.
+ *
+ *
+ * Task: how would you do it if you were to assume there are more than one spaces inbetween the words.
+ *
+ * TODO: can you do it functional way ? ? YOUTUBE: video
  */
 public class GoatLatin {
 
+    public String toGoatLatin(String inputSetence) {
+        String inputs[] = inputSetence.split("\\W");
+        StringBuffer sb = new StringBuffer();
+        int index = 1;
+        for (String input : inputs) {
+            if (startsWithVowel(input)) {
+                sb.append(input).append(buildMa(index));
+            } else {
+                sb.append(consonant(input)).append(buildMa(index));
+            }
+            sb.append(" ");
+            index++;
+        }
+        return sb.toString().trim();
+    }
 
-    public static void main(String[] args) {
+    private boolean startsWithVowel(String input) {
+        char in = input.toLowerCase().charAt(0);
+        return in == 'a' ||
+                in == 'e' ||
+                in == 'i' ||
+                in == 'o' ||
+                in == 'u';
 
     }
+
+    private String consonant(String input) {
+        return input.substring(1) + "" + input.charAt(0);
+    }
+
+    private String buildMa(int number) {
+        StringBuffer sb = new StringBuffer("ma");
+        for (int i = 0; i < number; i++) {
+            sb.append("a");
+        }
+        return sb.toString();
+    }
+
+
+/*
+
 
     private static String buildMa(int i) {
         StringBuffer sb = new StringBuffer("ma");
@@ -165,4 +212,5 @@ public class GoatLatin {
         assertEquals("maa", s);
         assertEquals("maaa", s1);
     }
+*/
 }

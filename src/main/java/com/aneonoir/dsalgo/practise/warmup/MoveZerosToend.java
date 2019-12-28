@@ -5,8 +5,15 @@ package com.aneonoir.dsalgo.practise.warmup;
  * tag: interview,array
  * Struggle
  * TODO: still failing test case, not even sure if its optimal
+ *
+ * update: solved it faster ,
+ *
+ * tag: interview, array
+ *
  */
 public class MoveZerosToend {
+
+    /* A non working solution
     public void moveZeroes(int[] nums) {
         int countsOfZero=0;
         for(int i=0;i<nums.length;i++){
@@ -32,6 +39,23 @@ public class MoveZerosToend {
         while(t<countsOfZero){
             nums[nums.length-1-t]=0;
             t++;
+        }
+    }*/
+
+    public void moveZeroes(int[] nums) {
+        int countOfZeros = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) countOfZeros++;
+        }
+        int index = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[index] = nums[i];
+                index++;
+            }
+        }
+        for (int i = index; i < nums.length; i++) {
+            nums[i] = 0;
         }
     }
 }
