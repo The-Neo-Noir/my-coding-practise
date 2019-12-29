@@ -15,6 +15,7 @@ import java.util.Scanner;
  */
 public class MajorityElement {
 
+
     //** approach 2, but still did  not help
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
