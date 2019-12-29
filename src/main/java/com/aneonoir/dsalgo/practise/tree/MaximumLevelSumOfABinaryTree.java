@@ -12,6 +12,10 @@ import java.util.TreeMap;
  * struggle: DO a good bit of comparable and comparator.
  * <p>
  * tag: level order traversal, node sum , tree, comparable, comparator, equals and hashcode.
+ *
+ * runtime: Runtime: 10 ms, faster than 41.49% of Java online submissions for Maximum Level Sum of a Binary Tree.
+ *
+ * TODO: can you improve it, see how others are doing it.
  */
 public class MaximumLevelSumOfABinaryTree {
     public int maxLevelSum(TreeNode root) {
