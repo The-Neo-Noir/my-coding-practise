@@ -1,6 +1,6 @@
 package com.aneonoir.dsalgo.practise.array;
 
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * link: https://practice.geeksforgeeks.org/problems/move-all-zeroes-to-end-of-array/0
@@ -13,6 +13,11 @@ import java.util.Scanner;
  */
 public class MoveZerosToEnd {
     public static void main(String[] args) {
+        PriorityQueue<Integer> que = new PriorityQueue();
+        Integer[] ea = que.toArray(new Integer[que.size()]);
+        List<Integer> list = new ArrayList(que.size());
+        Integer[] integers = que.toArray(new Integer[que.size()]);
+        list.addAll(Arrays.asList(integers));
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
