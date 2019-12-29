@@ -4,12 +4,11 @@ package com.aneonoir.dsalgo.practise.warmup;
  * link: https://leetcode.com/problems/move-zeroes/
  * tag: interview,array
  * Struggle
- * TODO: still failing test case, not even sure if its optimal
- *
+ * TODO:  Can you do even better
+ * <p>
  * update: solved it faster ,
- *
+ * <p>
  * tag: interview, array
- *
  */
 public class MoveZerosToend {
 
@@ -57,5 +56,6 @@ public class MoveZerosToend {
         for (int i = index; i < nums.length; i++) {
             nums[i] = 0;
         }
+
     }
 }
