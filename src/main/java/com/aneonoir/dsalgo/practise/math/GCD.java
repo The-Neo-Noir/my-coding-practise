@@ -3,7 +3,11 @@ package com.aneonoir.dsalgo.practise.math;
 import java.util.Scanner;
 
 /**
- * link: self
+     * link: https://www.lintcode.com/problem/greatest-common-divisor/description
+ *
+ * TODO: practise how it works for differnt test cases.
+ *
+ *
  *
  */
 public class GCD {
