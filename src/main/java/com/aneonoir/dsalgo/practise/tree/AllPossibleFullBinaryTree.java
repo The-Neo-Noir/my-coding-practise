@@ -15,6 +15,7 @@ public class AllPossibleFullBinaryTree {
     }
 
 
+
     public List<TreeNode> allPossibleFBT(int N) {
 
         if (N % 2 == 0) {
