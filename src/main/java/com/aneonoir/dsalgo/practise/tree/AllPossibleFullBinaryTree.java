@@ -9,7 +9,6 @@ import java.util.List;
  * TODO: I could not solve it. Another try is required
  */
 public class AllPossibleFullBinaryTree {
-
     public static void main(String[] args) {
         AllPossibleFullBinaryTree allPossibleFullBinaryTree = new AllPossibleFullBinaryTree();
         allPossibleFullBinaryTree.allPossibleFBT(5);
