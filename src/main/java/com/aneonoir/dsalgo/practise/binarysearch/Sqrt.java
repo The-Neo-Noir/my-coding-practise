@@ -1,5 +1,7 @@
 package com.aneonoir.dsalgo.practise.binarysearch;
 
+import java.util.PriorityQueue;
+
 /**
  * link: https://leetcode.com/problems/sqrtx/submissions/
  * <p>
