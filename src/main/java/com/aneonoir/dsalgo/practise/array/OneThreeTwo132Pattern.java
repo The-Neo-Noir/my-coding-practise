@@ -1,6 +1,7 @@
 package com.aneonoir.dsalgo.practise.array;
 
 /**
+ * link:  132 pattern.
  * first struggle: got the question wrong, I thought , i j k has to be consecutive.
  * second struggle: After I got the idea that I , j , k must be in increasing order, I failed the test case, still , the i,j, k generation was wrong, 0,1,2 is possible, 0,2,5 is also a valid case
  *  So  i introfucef another for loop for j

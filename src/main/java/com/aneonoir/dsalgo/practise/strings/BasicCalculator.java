@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 /**
  * link:
  * TODO
+ * tag: stack,
  */
 public class BasicCalculator {
     HashMap<Character, Integer> map = new HashMap<>();

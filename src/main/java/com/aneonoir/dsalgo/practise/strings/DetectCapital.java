@@ -7,7 +7,8 @@ package com.aneonoir.dsalgo.practise.strings;
  * Easy, solved , but can you do less code, can you merge so many if else into smaller footprint in code.
  * <p>
  * See some of the ways how are they are solving it. And wrote so much code .
- * tag: interview, regex.
+ * tag: interview, regex,string,
+ *
  * TODO: write concise code, use regex may be .
  */
 public class DetectCapital {
