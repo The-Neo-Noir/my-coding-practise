@@ -21,7 +21,7 @@ import java.util.Arrays;
  *  * > TLE: so , i removed the precomputed HashSet with simple bitmagic.
  *  * >
  *
- * tag: interview, bitwise, arrays, counting, trickey , tricky,note, learning
+ * tag: interview, bitwise, arrays, counting, trickey , tricky,note, learningK
  *
  * TODO: analysis of the time complexity and space complexity .
  *
