@@ -13,6 +13,8 @@ import java.util.Queue;
  *
  *
  * tag: interview, matrix, traversal , struggle
+ *
+ * slow performance, so many loops dude , this is also a pattern while solving tree traversal problem . fix it
  */
 public class DiagonalTraverse {
 
