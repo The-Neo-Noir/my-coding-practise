@@ -10,6 +10,11 @@ import static org.junit.Assert.assertEquals;
  * https://app.codesignal.com/arcade/code-arcade/spring-of-integration/dwA8RtDF86WucuoaQ
  * <p>
  * Struggle: convertIntArrayToList , i++ is the problem , it should be i+
+ *
+ * TODO: can you do it without using all those arraylist and stuff  , i.e inplace  ?
+ *
+ * {@link ArrayConversionII}
+ *
  */
 public class ArrayConversion {
 
