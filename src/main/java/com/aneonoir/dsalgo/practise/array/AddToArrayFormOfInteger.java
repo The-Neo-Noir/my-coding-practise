@@ -4,6 +4,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * link: https://leetcode.com/problems/add-to-array-form-of-integer/
+ *
+ *
  * approach: pretty brueteforce,
  *
  * gothcas: make sure your array index is protected. make the carry reset to 0
