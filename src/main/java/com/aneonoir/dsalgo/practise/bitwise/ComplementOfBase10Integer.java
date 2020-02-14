@@ -32,6 +32,11 @@ package com.aneonoir.dsalgo.practise.bitwise;
  *
  * TODO: see others solution how they do
  *
+ * related: Minimum Moves to Equal Array Elements (https://leetcode.com/problems/minimum-moves-to-equal-array-elements/)
+ * Rabbits in Forest( https://leetcode.com/problems/rabbits-in-forest/ )
+ * Stone Game ( https://leetcode.com/problems/stone-game/ )
+ *
+ *
  */
 public class ComplementOfBase10Integer {
         public int bitwiseComplement(int N) {
