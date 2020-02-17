@@ -6,6 +6,8 @@ package com.aneonoir.dsalgo.practise.bitwise;
  * approach: iterate all the bits and count the cases
  *
  *
+ * TODO: should there be any single liner to solve it
+ *
  * tag: bitwise,interivew,struggle,
  *
  * Related: https://leetcode.com/problems/bitwise-and-of-numbers-range/
