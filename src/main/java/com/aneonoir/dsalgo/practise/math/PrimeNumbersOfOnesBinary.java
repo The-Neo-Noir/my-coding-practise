@@ -4,7 +4,7 @@ package com.aneonoir.dsalgo.practise.math;
  * link: https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/
  *
  * IT could be faster ; learn how Runtime: 65 ms, faster than 14.19% of Java online submissions for Prime Number of Set Bits in Binary Representation.
- *
+ *TODO: learn how to do it faster.
  * tag: easy, math , prime number, interview,
  *
  */
