@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 /**
  * link: https://practice.geeksforgeeks.org/problems/does-array-represent-heap/0
- *
+ * <p>
  * TODO: I did this one from right to left, ie find parent and check, but can you do it from left to right.
- *
- *
+ * <p>
+ * <p>
  * tag: easy, heap, interivew. warmup
  */
 public class DoesArrayRepresentHeap {
@@ -30,7 +30,6 @@ public class DoesArrayRepresentHeap {
                 }
             }
             System.out.println(result == true ? 1 : 0);
-
         }
     }
 }
