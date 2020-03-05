@@ -1,5 +1,6 @@
 package com.aneonoir.dsalgo.practise;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -15,7 +16,6 @@ public class BrickWall {
         list.add(Arrays.asList(2, 3, 1, 1));
         list.add(Arrays.asList(3, 1, 2));
         list.add(Arrays.asList(1, 3, 1, 2));
-
         brickWall.leastBricks(list);
     }
 
