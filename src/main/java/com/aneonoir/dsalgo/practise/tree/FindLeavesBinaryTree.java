@@ -26,7 +26,7 @@ public class FindLeavesBinaryTree {
 
     public void findLeaves(List<List<Integer>> list, List<TreeNode> levels, LinkedList<Integer> leaves) {
         if (levels.size() > 0) {
-            LinkedsList<Integer> nonLeaves = new LinkedList<>();
+            LinkedList<Integer> nonLeaves = new LinkedList<>();
             List<TreeNode> toLevels = new LinkedList<>();
             for (int i = levels.size() - 1; i >= 0; i--) {
                 TreeNode levelItem = levels.get(i);
