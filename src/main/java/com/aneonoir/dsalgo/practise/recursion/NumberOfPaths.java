@@ -10,7 +10,7 @@ import java.util.Scanner;
  *  // TODO is it dynamic programming ?  , did you use memoization  ? can you see if there is an overlapping subproblem ?
  *
  *  // write down the bottom up approach
- *  tag: dynamic proramming ,
+ *  tag: dynamic proramming , recursion, interview,
  */
 public class NumberOfPaths {
     public static void main (String[] args)
