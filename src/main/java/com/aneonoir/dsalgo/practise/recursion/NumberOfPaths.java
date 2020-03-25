@@ -8,6 +8,8 @@ import java.util.Scanner;
  *  a topdown approach , recursion.
  *
  *  // TODO is it dynamic programming ?  , did you use memoization  ? can you see if there is an overlapping subproblem ?
+ *
+ *  // write down the bottom up approach
  *  tag: dynamic proramming ,
  */
 public class NumberOfPaths {
