@@ -1,4 +1,4 @@
-package com.aneonoir.dsalgo.practise.bitwise;
+package com.aneonoir.dsalgo.practise.dynamicprogramming;
 
 /**
  * link:https://leetcode.com/problems/counting-bits/
@@ -7,9 +7,12 @@ package com.aneonoir.dsalgo.practise.bitwise;
  * however using the first hint I could come up with a solution. which solve it in o(n)
  * Struggle at casesses like for 0
  *
- * tag: bitwise, dynamic programming, interivew, struggle.
+ *  //todo: topdown approach
+ *
+ * tag: bitwise, dynamic programming, interivew, struggle. 
  */
 public class CountingBits {
+    // bottom up approach.
     public int[] countBits(int num) {
         int[] a = new int[num + 1];
         if (num >= 0) {
