@@ -6,7 +6,7 @@ package com.aneonoir.dsalgo.practise.math;
  * approach: 1. Use string and its lengh , ( slow) 2. used math operation ( still slow) , 3. Use Logarithm  , surprisingly fast.
  * <p>
  * <p>
- * RUNTIME:     Runtime: 1 ms, faster than 96.56% of Java online submissions for Find Numbers with Even Number of Digits.
+ * RUNTIME:     Runtime: 1 ms, faster than 96.56% of Java online submissions for Find Numbers with Even Number of Digit s.
  * <p>
  * tag: interview , math,
  * <p>
