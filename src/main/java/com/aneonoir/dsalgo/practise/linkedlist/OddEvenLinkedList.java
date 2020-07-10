@@ -3,7 +3,7 @@ package com.aneonoir.dsalgo.practise.linkedlist;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
+/**K
  * link:
  * <p>
  * I used a queue , this might be a cheat. Can you do it better. ?
