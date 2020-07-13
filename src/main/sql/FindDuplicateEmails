@@ -1,0 +1,16 @@
+
+
+-- my solution , see https://leetcode.com/problems/duplicate-emails/solution/
+-- solutions for all amazing things
+
+
+ select p1.email as Email from person p1 ,
+   ( select email, count(email) as count from person group by email) p2
+   where
+  p1.email=p2.email
+  and
+  p2.count > 1
+
+  group by p1.email;
+
+--
