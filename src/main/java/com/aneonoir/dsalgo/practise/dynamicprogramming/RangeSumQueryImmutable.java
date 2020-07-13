@@ -5,6 +5,10 @@ package com.aneonoir.dsalgo.practise.dynamicprogramming;
  *
  * approach: populate each column with value from previous colun by adding.
  *
+ * There seems to be even better approach , my runtime is slow
+ * Runtime: 21 ms, faster than 27.63% of Java online submissions for Range Sum Query - Immutable.
+ *
+ * TODO: can you do it even faster ?
  * //TODO : there seems to be a faster way, try learn from other submissions.
  * tag: easy, dynamic programming.
  */
